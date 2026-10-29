@@ -13,7 +13,7 @@ export function AnalyzeForm({ examples }: { examples: Example[] }) {
 
   return (
     <form action={formAction} className="space-y-4">
-      <div className="rounded-3xl border border-line bg-shell p-2 shadow-[0_8px_30px_-12px_rgba(168,50,90,0.25)] focus-within:border-berry">
+      <div className="rounded-3xl border border-line bg-shell p-2 shadow-[0_8px_30px_-12px_rgba(168,50,90,0.25)] transition-shadow has-[textarea:focus]:border-berry has-[textarea:focus]:ring-4 has-[textarea:focus]:ring-berry/15">
         <label htmlFor="ingredients" className="block px-3 pt-2 text-sm font-semibold text-ink">
           Paste the ingredient list here
         </label>
@@ -27,7 +27,7 @@ export function AnalyzeForm({ examples }: { examples: Example[] }) {
           maxLength={MAX_INPUT_LENGTH}
           placeholder="Aqua, Niacinamide, Glycerin, Zinc PCA, Sodium Hyaluronate, Phenoxyethanol…"
           aria-describedby="ingredients-help ingredients-error"
-          className="block w-full resize-y rounded-2xl bg-transparent px-3 py-2 text-base leading-relaxed text-ink placeholder:text-muted/70 focus:outline-none"
+          className="block w-full resize-y rounded-2xl bg-transparent px-3 py-2 text-base leading-relaxed text-ink placeholder:text-muted/70 focus:outline-none focus-visible:outline-none"
         />
         <div className="flex flex-wrap items-center justify-between gap-2 px-2 pb-1">
           <p id="ingredients-help" className="text-xs text-muted">
