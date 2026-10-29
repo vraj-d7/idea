@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { analyze, findAlternatives, findConflicts, keyIngredientsOf } from "./analyze";
+import { analyze, findAlternatives, findConflicts, identifyProduct, keyIngredientsOf } from "./analyze";
 import { buildFaqs } from "./faqs";
 import { buildIndex, parseIngredientList } from "./parse";
 import { ingredients, products, rules } from "./test-data";
@@ -88,6 +88,21 @@ describe("analyze", () => {
     const a = run(sample.ingredients.join(", "));
     expect(a.unmatched).toEqual([]);
     expect(a.conflicts[0].severity).toBe("high");
+  });
+});
+
+describe("identifyProduct", () => {
+  const matchSlug = (raw: string) => parseIngredientList(raw, index)[0]?.slug ?? null;
+  const slugsOf = (text: string) => parseIngredientList(text, index).map((p) => p.slug);
+
+  it("recognises a pasted label from the catalog, even with spelling differences", () => {
+    const serum = products.find((p) => p.slug === "glowlab-vitamin-c-15-serum")!;
+    const pasted = serum.ingredients.join(", ").replace("Aqua", "Water").replace("Fragrance", "Parfum");
+    expect(identifyProduct(slugsOf(pasted), products, matchSlug)?.slug).toBe(serum.slug);
+  });
+
+  it("returns null for a list that isn't in the catalog", () => {
+    expect(identifyProduct(slugsOf("Water, Glycerin, Niacinamide, Retinol"), products, matchSlug)).toBeNull();
   });
 });
 

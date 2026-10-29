@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
+/* Soft, skincare-brand palette. Text colours are checked for WCAG AA on
+   their backgrounds. */
+@theme {
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  --color-cream: #fdf8f4;
+  --color-shell: #ffffff;
+  --color-blush: #fbe7e1;
+  --color-blush-strong: #f6d2c8;
+  --color-ink: #2b2025;
+  --color-muted: #6a5960;
+  --color-line: #efe2dc;
+  --color-berry: #a8325a;
+  --color-berry-dark: #8a2549;
+
+  --color-good-bg: #e4f2e7;
+  --color-good: #1f6237;
+  --color-care-bg: #fdf0d3;
+  --color-care: #7f5200;
+  --color-bad-bg: #fde3e3;
+  --color-bad: #9e2330;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  color-scheme: light;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+/* Visible keyboard focus everywhere. */
+:focus-visible {
+  outline: 3px solid var(--color-berry);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }

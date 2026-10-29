@@ -154,6 +154,25 @@ export function keyIngredientsOf(slugs: string[], products: ProductData[]): stri
   return slugs.filter((s) => advertised.has(s));
 }
 
+/**
+ * If the pasted list is a known product's label (same identified ingredients
+ * in the same order), return that product.
+ */
+export function identifyProduct(
+  parsedSlugs: (string | null)[],
+  products: ProductData[],
+  matchSlug: (raw: string) => string | null,
+): ProductData | null {
+  const target = parsedSlugs.filter((s): s is string => !!s);
+  if (target.length < 3) return null;
+  return (
+    products.find((p) => {
+      const slugs = p.ingredients.map(matchSlug).filter((s): s is string => !!s);
+      return slugs.length === target.length && slugs.every((s, i) => s === target[i]);
+    }) ?? null
+  );
+}
+
 export type Alternative = { product: ProductData; shared: string[] };
 
 /** Groups too broad to call two ingredients "similar" (AHA vs BHA). */

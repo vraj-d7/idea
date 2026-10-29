@@ -25,6 +25,5 @@ export const rules: ConflictRuleData[] = conflictsJson.map((c) => ({
 
 export const products: ProductData[] = productsJson.map((p) => ({
   imageUrl: null,
-  placeholder: true,
   ...p,
 }));
