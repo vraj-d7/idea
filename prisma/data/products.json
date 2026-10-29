@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "dewdrop-niacinamide-zinc-serum",
+    "name": "10% Niacinamide + Zinc Serum",
+    "brand": "Dewdrop Labs (sample)",
+    "priceInr": 599,
+    "ingredients": ["Aqua", "Niacinamide", "Propanediol", "Zinc PCA", "Glycerin", "Xanthan Gum", "Sodium Hyaluronate", "Phenoxyethanol", "Ethylhexylglycerin", "Disodium EDTA"],
+    "keyIngredients": ["niacinamide", "zinc-pca"],
+    "affiliateUrl": "https://example.com/placeholder/dewdrop-niacinamide-zinc-serum",
+    "placeholder": true
+  },
+  {
+    "slug": "kasa-niacinamide-5-serum",
+    "name": "5% Niacinamide Daily Serum",
+    "brand": "Kasa Basics (sample)",
+    "priceInr": 349,
+    "ingredients": ["Water", "Niacinamide", "Glycerin", "Butylene Glycol", "Panthenol", "Carbomer", "Sodium Hydroxide", "Phenoxyethanol"],
+    "keyIngredients": ["niacinamide", "panthenol"],
+    "affiliateUrl": "https://example.com/placeholder/kasa-niacinamide-5-serum",
+    "placeholder": true
+  },
+  {
+    "slug": "glowlab-salicylic-2-serum",
+    "name": "2% Salicylic Acid Clarifying Serum",
+    "brand": "Glowlab (sample)",
+    "priceInr": 549,
+    "ingredients": ["Aqua", "Propanediol", "Salicylic Acid", "Niacinamide", "Glycerin", "Zinc PCA", "Sodium Hydroxide", "Xanthan Gum", "1,2-Hexanediol", "Phenoxyethanol"],
+    "keyIngredients": ["salicylic-acid", "niacinamide"],
+    "affiliateUrl": "https://example.com/placeholder/glowlab-salicylic-2-serum",
+    "placeholder": true
+  },
+  {
+    "slug": "kasa-salicylic-face-wash",
+    "name": "Salicylic Acid Gel Face Wash",
+    "brand": "Kasa Basics (sample)",
+    "priceInr": 249,
+    "ingredients": ["Water", "Sodium Laureth Sulfate", "Glycerin", "Salicylic Acid", "Centella Asiatica Extract", "Panthenol", "Carbomer", "Sodium Hydroxide", "Fragrance", "Phenoxyethanol", "Disodium EDTA"],
+    "keyIngredients": ["salicylic-acid"],
+    "affiliateUrl": "https://example.com/placeholder/kasa-salicylic-face-wash",
+    "placeholder": true
+  },
+  {
+    "slug": "dewdrop-retinol-glycolic-night-serum",
+    "name": "Retinol + Glycolic Overnight Serum",
+    "brand": "Dewdrop Labs (sample)",
+    "priceInr": 899,
+    "ingredients": ["Aqua", "Glycolic Acid", "Propanediol", "Squalane", "Retinol", "Niacinamide", "Tocopherol", "Sodium Hydroxide", "Parfum", "Phenoxyethanol"],
+    "keyIngredients": ["retinol", "glycolic-acid"],
+    "affiliateUrl": "https://example.com/placeholder/dewdrop-retinol-glycolic-night-serum",
+    "placeholder": true
+  },
+  {
+    "slug": "kasa-retinol-ceramide-night-cream",
+    "name": "0.2% Retinol + Ceramide Night Cream",
+    "brand": "Kasa Basics (sample)",
+    "priceInr": 449,
+    "ingredients": ["Water", "Glycerin", "Cetearyl Alcohol", "Squalane", "Dimethicone", "Retinol", "Ceramide NP", "Panthenol", "Tocopherol", "Allantoin", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "keyIngredients": ["retinol", "ceramides"],
+    "affiliateUrl": "https://example.com/placeholder/kasa-retinol-ceramide-night-cream",
+    "placeholder": true
+  },
+  {
+    "slug": "glowlab-vitamin-c-15-serum",
+    "name": "15% Vitamin C Glow Serum",
+    "brand": "Glowlab (sample)",
+    "priceInr": 799,
+    "ingredients": ["Aqua", "Ascorbic Acid", "Propylene Glycol", "Alcohol Denat.", "Glycerin", "Tocopherol", "Sodium Hyaluronate", "Fragrance", "Phenoxyethanol"],
+    "keyIngredients": ["l-ascorbic-acid", "tocopherol"],
+    "affiliateUrl": "https://example.com/placeholder/glowlab-vitamin-c-15-serum",
+    "placeholder": true
+  },
+  {
+    "slug": "kasa-ethyl-ascorbic-vitamin-c-serum",
+    "name": "Gentle Vitamin C Serum (Ethyl Ascorbic)",
+    "brand": "Kasa Basics (sample)",
+    "priceInr": 399,
+    "ingredients": ["Water", "Propanediol", "Ethyl Ascorbic Acid", "Niacinamide", "Glycerin", "Tocopheryl Acetate", "Xanthan Gum", "Phenoxyethanol"],
+    "keyIngredients": ["ethyl-ascorbic-acid", "niacinamide"],
+    "affiliateUrl": "https://example.com/placeholder/kasa-ethyl-ascorbic-vitamin-c-serum",
+    "placeholder": true
+  },
+  {
+    "slug": "mellow-ceramide-barrier-cream",
+    "name": "Ceramide Barrier Repair Cream",
+    "brand": "Mellow Skin (sample)",
+    "priceInr": 649,
+    "ingredients": ["Aqua", "Glycerin", "Cetearyl Alcohol", "Butyrospermum Parkii Butter", "Squalane", "Ceramide NP", "Ceramide AP", "Ceramide EOP", "Panthenol", "Dimethicone", "Parfum", "Phenoxyethanol"],
+    "keyIngredients": ["ceramides", "panthenol", "squalane"],
+    "affiliateUrl": "https://example.com/placeholder/mellow-ceramide-barrier-cream",
+    "placeholder": true
+  },
+  {
+    "slug": "kasa-ceramide-cica-gel-cream",
+    "name": "Ceramide + Cica Gel Cream",
+    "brand": "Kasa Basics (sample)",
+    "priceInr": 379,
+    "ingredients": ["Water", "Glycerin", "Butylene Glycol", "Centella Asiatica Extract", "Ceramide NP", "Panthenol", "Squalane", "Carbomer", "Sodium Hydroxide", "1,2-Hexanediol", "Phenoxyethanol"],
+    "keyIngredients": ["ceramides", "centella-asiatica", "panthenol"],
+    "affiliateUrl": "https://example.com/placeholder/kasa-ceramide-cica-gel-cream",
+    "placeholder": true
+  },
+  {
+    "slug": "glowlab-mineral-sunscreen-spf50",
+    "name": "Mineral Sunscreen SPF 50 PA++++",
+    "brand": "Glowlab (sample)",
+    "priceInr": 699,
+    "ingredients": ["Aqua", "Zinc Oxide", "Titanium Dioxide", "Cyclopentasiloxane", "Glycerin", "Niacinamide", "Tocopherol", "Phenoxyethanol"],
+    "keyIngredients": ["zinc-oxide", "titanium-dioxide"],
+    "affiliateUrl": "https://example.com/placeholder/glowlab-mineral-sunscreen-spf50",
+    "placeholder": true
+  },
+  {
+    "slug": "kasa-benzoyl-peroxide-gel",
+    "name": "2.5% Benzoyl Peroxide Spot Gel",
+    "brand": "Kasa Basics (sample)",
+    "priceInr": 299,
+    "ingredients": ["Water", "Benzoyl Peroxide", "Glycerin", "Carbomer", "Allantoin", "Sodium Hydroxide", "Disodium EDTA"],
+    "keyIngredients": ["benzoyl-peroxide"],
+    "affiliateUrl": "https://example.com/placeholder/kasa-benzoyl-peroxide-gel",
+    "placeholder": true
+  }
+]

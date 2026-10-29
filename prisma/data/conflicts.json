@@ -1,0 +1,92 @@
+[
+  {
+    "a": "group:retinoid",
+    "b": "group:aha",
+    "severity": "high",
+    "explanation": "Both speed up skin turnover. Together they often cause redness, peeling and a damaged barrier. Use them on different nights."
+  },
+  {
+    "a": "group:retinoid",
+    "b": "group:bha",
+    "severity": "high",
+    "explanation": "Salicylic acid plus a retinoid is a lot of exfoliation at once and can leave skin raw and dry. Alternate nights instead."
+  },
+  {
+    "a": "group:retinoid",
+    "b": "group:benzoyl-peroxide",
+    "severity": "high",
+    "explanation": "Benzoyl peroxide can break down some retinoids, and the pair is very drying. Use benzoyl peroxide in the morning and the retinoid at night."
+  },
+  {
+    "a": "group:retinoid",
+    "b": "group:vitamin-c-acid",
+    "severity": "medium",
+    "explanation": "Pure vitamin C works best at a low pH, while retinoids can make skin more reactive. Layering both often stings. Vitamin C in the morning, retinoid at night."
+  },
+  {
+    "a": "group:vitamin-c-acid",
+    "b": "group:aha",
+    "severity": "medium",
+    "explanation": "Two low-pH products layered together can sting and irritate. Space them out, for example vitamin C in the morning and acids at night."
+  },
+  {
+    "a": "group:vitamin-c-acid",
+    "b": "group:bha",
+    "severity": "medium",
+    "explanation": "Stacking acidic vitamin C with salicylic acid can be too much for many skin types. Use them at different times of day."
+  },
+  {
+    "a": "group:vitamin-c-acid",
+    "b": "group:benzoyl-peroxide",
+    "severity": "medium",
+    "explanation": "Benzoyl peroxide is an oxidiser and can make vitamin C less effective. Keep them at different times of day."
+  },
+  {
+    "a": "group:aha",
+    "b": "group:bha",
+    "severity": "low",
+    "explanation": "Some products combine these on purpose at low strengths. Using a separate strong AHA and BHA together can over-exfoliate, so watch for tightness and stinging."
+  },
+  {
+    "a": "group:aha",
+    "b": "group:benzoyl-peroxide",
+    "severity": "medium",
+    "explanation": "Exfoliating acids plus benzoyl peroxide is very drying and can irritate. Use them on different days or different times."
+  },
+  {
+    "a": "group:bha",
+    "b": "group:benzoyl-peroxide",
+    "severity": "medium",
+    "explanation": "Both are strong acne-fighters. Together they can over-dry and inflame skin. Pick one per routine."
+  },
+  {
+    "a": "group:copper-peptide",
+    "b": "group:vitamin-c-acid",
+    "severity": "medium",
+    "explanation": "Pure vitamin C and copper peptides can make each other less effective. Use them at different times of day."
+  },
+  {
+    "a": "group:copper-peptide",
+    "b": "group:aha",
+    "severity": "low",
+    "explanation": "Strong acids can destabilise copper peptides. Keep them in separate routines for best results."
+  },
+  {
+    "a": "group:copper-peptide",
+    "b": "group:retinoid",
+    "severity": "low",
+    "explanation": "Not harmful, but both can be demanding on sensitive skin. Many people alternate nights."
+  },
+  {
+    "a": "group:retinoid",
+    "b": "group:retinoid",
+    "severity": "medium",
+    "explanation": "Using two retinoids at once mostly adds irritation without adding much benefit. Stick to one."
+  },
+  {
+    "a": "group:exfoliating-acid",
+    "b": "alcohol-denat",
+    "severity": "low",
+    "explanation": "Drying alcohol plus exfoliating acids can leave skin feeling tight and irritated. Keep an eye out for flaking."
+  }
+]

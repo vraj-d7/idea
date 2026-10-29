@@ -1,0 +1,69 @@
+// SQLite for local dev. To move to Postgres/Supabase, change `provider`
+// to "postgresql" and point DATABASE_URL at your database. All list-like
+// fields are Json columns so they work the same on both.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Ingredient {
+  id          String @id @default(cuid())
+  slug        String @unique
+  name        String
+  /// string[]: INCI names, common names, label spellings
+  aliases     Json
+  /// string[]: e.g. ["hydrating", "humectant"]
+  functions   Json
+  /// string[]: conflict groups, e.g. ["retinoid"] or ["aha", "exfoliating-acid"]
+  groups      Json
+  description String
+  /// "good" | "care" | "irritant"
+  rating      String
+  /// { oily, dry, sensitive, acne }: each { fit: -1 | 0 | 1, note: string }
+  skinTypes   Json
+  /// { q: string, a: string }[]
+  faqs        Json
+  updatedAt   DateTime @updatedAt
+}
+
+model ConflictRule {
+  id          String @id @default(cuid())
+  /// An ingredient slug ("retinol") or a group ("group:aha")
+  ingredientA String
+  ingredientB String
+  /// "high" | "medium" | "low"
+  severity    String
+  explanation String
+
+  @@unique([ingredientA, ingredientB])
+}
+
+model Product {
+  id             String  @id @default(cuid())
+  slug           String  @unique
+  name           String
+  brand          String
+  /// Price in whole rupees
+  priceInr       Int
+  /// string[]: ingredient names in label order, as printed
+  ingredients    Json
+  /// string[]: ingredient slugs this product is "about"
+  keyIngredients Json
+  affiliateUrl   String
+  imageUrl       String?
+  /// true for the sample products that ship with the repo
+  placeholder    Boolean @default(true)
+}
+
+model AnalysisResult {
+  id        String   @id @default(cuid())
+  inputText String
+  /// { raw: string, slug: string | null }[] in label order
+  parsed    Json
+  createdAt DateTime @default(now())
+}

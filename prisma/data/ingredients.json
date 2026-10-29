@@ -1,0 +1,1381 @@
+[
+  {
+    "slug": "water",
+    "name": "Water",
+    "aliases": [
+      "aqua",
+      "aqua/water",
+      "water/aqua",
+      "eau",
+      "purified water",
+      "deionized water",
+      "demineralized water"
+    ],
+    "functions": [
+      "solvent"
+    ],
+    "description": "The base of most creams, serums and gels. It dissolves the other ingredients and gives the product its texture. It does nothing special for your skin on its own, and that's fine.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "glycerin",
+    "name": "Glycerin",
+    "aliases": [
+      "glycerine",
+      "glycerol",
+      "vegetable glycerin"
+    ],
+    "functions": [
+      "hydrating",
+      "humectant"
+    ],
+    "description": "A humectant that pulls water into the top layer of skin and helps keep it there. It's one of the most researched and best-tolerated moisturising ingredients, and it's found in almost everything.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Reliable everyday hydration for tight, flaky skin."
+      },
+      "oily": {
+        "fit": 1,
+        "note": "Hydrates without adding oil."
+      },
+      "sensitive": {
+        "fit": 1,
+        "note": "Very rarely causes reactions."
+      }
+    }
+  },
+  {
+    "slug": "niacinamide",
+    "name": "Niacinamide",
+    "aliases": [
+      "vitamin b3",
+      "nicotinamide",
+      "niacin amide"
+    ],
+    "functions": [
+      "brightening",
+      "barrier support",
+      "oil control"
+    ],
+    "description": "A form of vitamin B3 that does a bit of everything: it supports the skin barrier, helps even out dull or patchy tone, and can make oily skin look less shiny. Most people do well at 2–5%. Very high strengths (10% and up) sometimes cause redness or tingling.",
+    "rating": "good",
+    "groups": [
+      "niacinamide"
+    ],
+    "skinTypes": {
+      "oily": {
+        "fit": 1,
+        "note": "Can help with shine and the look of pores."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Helps calm the look of post-breakout marks."
+      },
+      "sensitive": {
+        "fit": 0,
+        "note": "Usually fine at low strength. Patch-test 10%+ formulas."
+      },
+      "dry": {
+        "fit": 1,
+        "note": "Supports the barrier, which helps skin hold moisture."
+      }
+    },
+    "faqs": [
+      {
+        "q": "Is niacinamide safe with vitamin C?",
+        "a": "For most people, yes. The worry comes from old lab tests that heated the two together at high temperatures, which isn't how skincare is stored or used. Modern formulas are stable. If your skin flushes or feels warm when you layer them, use vitamin C in the morning and niacinamide at night."
+      },
+      {
+        "q": "What percentage of niacinamide should I use?",
+        "a": "2–5% is plenty for most people. Higher strengths like 10% don't always work better and are more likely to sting. If you're new to it, start low."
+      }
+    ]
+  },
+  {
+    "slug": "hyaluronic-acid",
+    "name": "Hyaluronic Acid",
+    "aliases": [
+      "sodium hyaluronate",
+      "hydrolyzed hyaluronic acid",
+      "hydrolysed hyaluronic acid",
+      "sodium acetylated hyaluronate",
+      "hyaluronan"
+    ],
+    "functions": [
+      "hydrating",
+      "humectant",
+      "plumping"
+    ],
+    "description": "A sugar-based molecule your skin already makes. In skincare it holds a lot of water, so skin looks plumper and feels bouncier. Despite the name, it is not an exfoliating acid and won't make skin peel.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Great for dehydration. Follow with a moisturiser to seal it in."
+      },
+      "oily": {
+        "fit": 1,
+        "note": "Lightweight hydration that doesn't feel greasy."
+      },
+      "sensitive": {
+        "fit": 1,
+        "note": "Gentle and rarely irritating."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Hydrates without clogging pores."
+      }
+    },
+    "faqs": [
+      {
+        "q": "Is hyaluronic acid an exfoliant?",
+        "a": "No. It's a hydrating ingredient, not an exfoliating acid like glycolic or salicylic acid. It's safe to use with almost everything."
+      }
+    ]
+  },
+  {
+    "slug": "retinol",
+    "name": "Retinol",
+    "aliases": [
+      "vitamin a"
+    ],
+    "functions": [
+      "anti-ageing",
+      "cell turnover",
+      "texture"
+    ],
+    "description": "A form of vitamin A that speeds up skin renewal. Over months it can improve texture, fine lines and uneven tone. Early on it often causes dryness, flaking or stinging, so start slowly, use it at night, and wear sunscreen every day.",
+    "rating": "care",
+    "groups": [
+      "retinoid"
+    ],
+    "skinTypes": {
+      "oily": {
+        "fit": 1,
+        "note": "Usually tolerated well and helps with texture."
+      },
+      "dry": {
+        "fit": -1,
+        "note": "Can make dryness worse. Pair with a rich moisturiser."
+      },
+      "sensitive": {
+        "fit": -1,
+        "note": "Often irritating. Try a gentler retinoid or bakuchiol."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Helps keep pores clear over time."
+      }
+    },
+    "faqs": [
+      {
+        "q": "How often should I use retinol as a beginner?",
+        "a": "Two or three nights a week to start. Slowly increase if your skin is comfortable. Some dryness at first is common, but stop if it burns or peels a lot."
+      },
+      {
+        "q": "Do I need sunscreen with retinol?",
+        "a": "Yes. Retinol can make skin more sensitive to the sun, so use a broad-spectrum sunscreen every morning."
+      }
+    ]
+  },
+  {
+    "slug": "retinal",
+    "name": "Retinal",
+    "aliases": [
+      "retinaldehyde",
+      "retinal aldehyde"
+    ],
+    "functions": [
+      "anti-ageing",
+      "cell turnover",
+      "texture"
+    ],
+    "description": "A vitamin A form that's one step closer to the active form than retinol, so it tends to work faster. That also makes it a bit more likely to irritate. Use it at night with sunscreen in the morning.",
+    "rating": "care",
+    "groups": [
+      "retinoid"
+    ],
+    "skinTypes": {
+      "oily": {
+        "fit": 1,
+        "note": "Good for texture and congestion."
+      },
+      "dry": {
+        "fit": -1,
+        "note": "Can be drying. Buffer with moisturiser."
+      },
+      "sensitive": {
+        "fit": -1,
+        "note": "Likely to sting. Start very slowly."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Helps with clogged pores."
+      }
+    }
+  },
+  {
+    "slug": "hydroxypinacolone-retinoate",
+    "name": "Hydroxypinacolone Retinoate",
+    "aliases": [
+      "hpr",
+      "granactive retinoid",
+      "retinoate"
+    ],
+    "functions": [
+      "anti-ageing",
+      "cell turnover"
+    ],
+    "description": "A newer retinoid that's often marketed as gentler than retinol, with less flaking for many people. It's a good first retinoid, but the usual rules still apply: use it at night and wear sunscreen.",
+    "rating": "care",
+    "groups": [
+      "retinoid"
+    ],
+    "skinTypes": {
+      "oily": {
+        "fit": 1,
+        "note": "Smooths texture with less drama."
+      },
+      "dry": {
+        "fit": 0,
+        "note": "Gentler than retinol, but still moisturise well."
+      },
+      "sensitive": {
+        "fit": 0,
+        "note": "One of the easier retinoids to tolerate. Patch-test first."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Supports clearer-looking pores."
+      }
+    }
+  },
+  {
+    "slug": "bakuchiol",
+    "name": "Bakuchiol",
+    "aliases": [
+      "psoralea corylifolia seed extract",
+      "babchi"
+    ],
+    "functions": [
+      "anti-ageing",
+      "antioxidant"
+    ],
+    "description": "A plant extract from babchi seeds that is often called a gentle retinol alternative. Early studies are encouraging, and it's usually much less irritating than vitamin A. Fine for day or night.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "A softer option if retinoids sting."
+      },
+      "dry": {
+        "fit": 1,
+        "note": "Doesn't usually cause flaking."
+      },
+      "oily": {
+        "fit": 0,
+        "note": "Fine. Often sold in oil-based serums, so check the texture."
+      }
+    }
+  },
+  {
+    "slug": "salicylic-acid",
+    "name": "Salicylic Acid",
+    "aliases": [
+      "bha",
+      "beta hydroxy acid",
+      "betaine salicylate"
+    ],
+    "functions": [
+      "exfoliating",
+      "pore-clearing",
+      "oil control"
+    ],
+    "description": "An oil-soluble exfoliating acid that can get into pores and help loosen the oil and dead skin that cause blackheads and bumps. 0.5–2% is the usual range. It can be drying, so don't overdo it.",
+    "rating": "care",
+    "groups": [
+      "bha",
+      "exfoliating-acid"
+    ],
+    "skinTypes": {
+      "oily": {
+        "fit": 1,
+        "note": "One of the best picks for oily, congested skin."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Helps keep pores clear of oil and dead skin."
+      },
+      "dry": {
+        "fit": -1,
+        "note": "Can make dry patches worse. Use sparingly."
+      },
+      "sensitive": {
+        "fit": -1,
+        "note": "Can sting. Start with 1–2 times a week."
+      }
+    },
+    "faqs": [
+      {
+        "q": "Can I use salicylic acid every day?",
+        "a": "Some oily skin types can, especially in a wash-off cleanser. If you notice tightness, flaking or stinging, cut back to a few times a week."
+      }
+    ]
+  },
+  {
+    "slug": "glycolic-acid",
+    "name": "Glycolic Acid",
+    "aliases": [],
+    "functions": [
+      "exfoliating",
+      "brightening",
+      "texture"
+    ],
+    "description": "The smallest alpha hydroxy acid (AHA), so it works quickly on the surface. It loosens dead skin to reveal smoother, brighter skin, and it's also the most likely AHA to sting. Wear sunscreen while using it.",
+    "rating": "care",
+    "groups": [
+      "aha",
+      "exfoliating-acid"
+    ],
+    "skinTypes": {
+      "oily": {
+        "fit": 1,
+        "note": "Good for dullness and rough texture."
+      },
+      "dry": {
+        "fit": 0,
+        "note": "Can help flaky skin, but follow with moisturiser."
+      },
+      "sensitive": {
+        "fit": -1,
+        "note": "Often too strong. Mandelic or lactic acid is gentler."
+      },
+      "acne": {
+        "fit": 0,
+        "note": "Can help with marks. Avoid using on angry, open spots."
+      }
+    }
+  },
+  {
+    "slug": "lactic-acid",
+    "name": "Lactic Acid",
+    "aliases": [],
+    "functions": [
+      "exfoliating",
+      "hydrating",
+      "brightening"
+    ],
+    "description": "A gentler AHA that exfoliates and also helps skin hold moisture. It's a good first acid for dry or easily irritated skin. Use sunscreen while using it.",
+    "rating": "care",
+    "groups": [
+      "aha",
+      "exfoliating-acid"
+    ],
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Exfoliates while helping with hydration."
+      },
+      "oily": {
+        "fit": 0,
+        "note": "Works, though salicylic acid may suit you better."
+      },
+      "sensitive": {
+        "fit": 0,
+        "note": "Gentler than glycolic. Still patch-test."
+      }
+    }
+  },
+  {
+    "slug": "mandelic-acid",
+    "name": "Mandelic Acid",
+    "aliases": [],
+    "functions": [
+      "exfoliating",
+      "brightening"
+    ],
+    "description": "A large AHA molecule that soaks into skin slowly, so it's usually the gentlest acid. Popular for people with deeper skin tones and sensitive skin who want even tone without much stinging.",
+    "rating": "care",
+    "groups": [
+      "aha",
+      "exfoliating-acid"
+    ],
+    "skinTypes": {
+      "sensitive": {
+        "fit": 0,
+        "note": "One of the gentlest acids. Still introduce slowly."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Helps with marks and mild congestion."
+      },
+      "oily": {
+        "fit": 1,
+        "note": "Good for gradual smoothing."
+      }
+    }
+  },
+  {
+    "slug": "azelaic-acid",
+    "name": "Azelaic Acid",
+    "aliases": [
+      "potassium azelaoyl diglycinate",
+      "azeloglicina"
+    ],
+    "functions": [
+      "brightening",
+      "calming",
+      "pore-clearing"
+    ],
+    "description": "An acid made from grains that helps with uneven tone, redness and clogged pores. It's gentle enough for many sensitive skin types, though some people feel a mild tingle at first.",
+    "rating": "good",
+    "skinTypes": {
+      "acne": {
+        "fit": 1,
+        "note": "Helps with bumps and lingering marks."
+      },
+      "sensitive": {
+        "fit": 1,
+        "note": "Often well tolerated, even by reactive skin."
+      },
+      "oily": {
+        "fit": 1,
+        "note": "Light and pore-friendly."
+      }
+    }
+  },
+  {
+    "slug": "l-ascorbic-acid",
+    "name": "Vitamin C (L-Ascorbic Acid)",
+    "aliases": [
+      "ascorbic acid",
+      "vitamin c",
+      "l ascorbic acid",
+      "laa"
+    ],
+    "functions": [
+      "antioxidant",
+      "brightening"
+    ],
+    "description": "The pure, most-studied form of vitamin C. It's an antioxidant that helps protect skin from daily stress like pollution and sun, and it brightens over time. It's acidic and goes off fast, so look for opaque, airtight packaging. It may tingle.",
+    "rating": "care",
+    "groups": [
+      "vitamin-c-acid",
+      "vitamin-c"
+    ],
+    "skinTypes": {
+      "oily": {
+        "fit": 1,
+        "note": "Water-based serums suit oily skin."
+      },
+      "dry": {
+        "fit": 0,
+        "note": "Fine. Follow with moisturiser."
+      },
+      "sensitive": {
+        "fit": -1,
+        "note": "Low pH can sting. Try a gentler derivative."
+      },
+      "acne": {
+        "fit": 0,
+        "note": "Helps fade marks. Avoid on irritated spots."
+      }
+    },
+    "faqs": [
+      {
+        "q": "My vitamin C serum turned orange. Is it still good?",
+        "a": "A light yellow is normal, but dark orange or brown means it has oxidised and lost most of its strength. Time to replace it."
+      }
+    ]
+  },
+  {
+    "slug": "sodium-ascorbyl-phosphate",
+    "name": "Sodium Ascorbyl Phosphate",
+    "aliases": [
+      "sap",
+      "magnesium ascorbyl phosphate",
+      "map"
+    ],
+    "functions": [
+      "antioxidant",
+      "brightening"
+    ],
+    "description": "A stable, gentle vitamin C derivative. It's less potent than pure vitamin C, but much less likely to sting or oxidise, so it's easy to fit into most routines.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "A gentler way to get vitamin C."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Good for marks and well tolerated."
+      }
+    },
+    "groups": [
+      "vitamin-c"
+    ]
+  },
+  {
+    "slug": "ethyl-ascorbic-acid",
+    "name": "Ethyl Ascorbic Acid",
+    "aliases": [
+      "3-o-ethyl ascorbic acid",
+      "ethyl ascorbate"
+    ],
+    "functions": [
+      "antioxidant",
+      "brightening"
+    ],
+    "description": "A stable vitamin C derivative that's popular in Indian serums. It holds up better than pure vitamin C and is usually less tingly, while still helping with brightness.",
+    "rating": "good",
+    "skinTypes": {
+      "oily": {
+        "fit": 1,
+        "note": "Lightweight brightening."
+      },
+      "sensitive": {
+        "fit": 0,
+        "note": "Gentler than L-ascorbic acid. Patch-test."
+      }
+    },
+    "groups": [
+      "vitamin-c"
+    ]
+  },
+  {
+    "slug": "ascorbyl-glucoside",
+    "name": "Ascorbyl Glucoside",
+    "aliases": [],
+    "functions": [
+      "antioxidant",
+      "brightening"
+    ],
+    "description": "Vitamin C bound to a sugar molecule, which makes it stable and gentle. Your skin slowly converts it to active vitamin C. Expect slower but softer results.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Very gentle."
+      }
+    },
+    "groups": [
+      "vitamin-c"
+    ]
+  },
+  {
+    "slug": "ceramides",
+    "name": "Ceramides",
+    "aliases": [
+      "ceramide np",
+      "ceramide ap",
+      "ceramide eop",
+      "ceramide ns",
+      "ceramide 3",
+      "ceramide 1",
+      "ceramide 6 ii",
+      "ceramide eos",
+      "ceramide"
+    ],
+    "functions": [
+      "barrier support",
+      "moisturising"
+    ],
+    "description": "Fats that naturally sit between your skin cells like mortar between bricks. Adding them back helps a stressed or over-exfoliated barrier hold moisture and feel less tight.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Excellent for a dry or damaged barrier."
+      },
+      "sensitive": {
+        "fit": 1,
+        "note": "Helps calm and strengthen reactive skin."
+      },
+      "oily": {
+        "fit": 0,
+        "note": "Fine in light gel creams."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Useful alongside drying acne products."
+      }
+    }
+  },
+  {
+    "slug": "benzoyl-peroxide",
+    "name": "Benzoyl Peroxide",
+    "aliases": [
+      "bpo"
+    ],
+    "functions": [
+      "anti-acne",
+      "antibacterial"
+    ],
+    "description": "A classic spot-fighting ingredient that targets acne-causing bacteria. It works, but it can dry and irritate skin, and it bleaches fabric like towels and pillowcases. Lower strengths (2.5%) are often as effective as higher ones, with less irritation.",
+    "rating": "care",
+    "groups": [
+      "benzoyl-peroxide"
+    ],
+    "skinTypes": {
+      "acne": {
+        "fit": 1,
+        "note": "A well-known option for active breakouts."
+      },
+      "oily": {
+        "fit": 1,
+        "note": "Usually tolerated by oily skin."
+      },
+      "dry": {
+        "fit": -1,
+        "note": "Very drying. Use short-contact or spot only."
+      },
+      "sensitive": {
+        "fit": -1,
+        "note": "Often irritating."
+      }
+    },
+    "faqs": [
+      {
+        "q": "Why did my towel get white patches?",
+        "a": "Benzoyl peroxide bleaches fabric. Use white towels and pillowcases, and let it dry fully before touching cloth."
+      }
+    ]
+  },
+  {
+    "slug": "zinc-oxide",
+    "name": "Zinc Oxide",
+    "aliases": [
+      "ci 77947",
+      "nano zinc oxide"
+    ],
+    "functions": [
+      "sunscreen (mineral)",
+      "soothing"
+    ],
+    "description": "A mineral UV filter that covers both UVA and UVB. It's gentle and suits sensitive skin, though higher amounts can leave a white cast on deeper skin tones.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "One of the gentlest UV filters."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Non-irritating option for breakout-prone skin."
+      },
+      "dry": {
+        "fit": 0,
+        "note": "Some zinc formulas feel dry. Moisturise underneath."
+      }
+    }
+  },
+  {
+    "slug": "titanium-dioxide",
+    "name": "Titanium Dioxide",
+    "aliases": [
+      "ci 77891"
+    ],
+    "functions": [
+      "sunscreen (mineral)",
+      "colourant"
+    ],
+    "description": "A mineral UV filter that's especially good at UVB. It's also used as a white pigment. It's gentle on skin but can leave a cast.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Rarely irritating."
+      }
+    }
+  },
+  {
+    "slug": "fragrance",
+    "name": "Fragrance",
+    "aliases": [
+      "parfum",
+      "perfume",
+      "aroma",
+      "fragrance/parfum",
+      "parfum/fragrance"
+    ],
+    "functions": [
+      "scent"
+    ],
+    "description": "A catch-all label for a blend of scent chemicals that brands don't have to list individually. It makes products smell nice and does nothing for skin. Fragrance is one of the more common causes of skin reactions.",
+    "rating": "irritant",
+    "skinTypes": {
+      "sensitive": {
+        "fit": -1,
+        "note": "Fragrance-free is usually the safer choice."
+      },
+      "acne": {
+        "fit": 0,
+        "note": "Not pore-clogging, but can irritate inflamed skin."
+      }
+    }
+  },
+  {
+    "slug": "alcohol-denat",
+    "name": "Alcohol Denat.",
+    "aliases": [
+      "alcohol denat",
+      "denatured alcohol",
+      "sd alcohol",
+      "sd alcohol 40",
+      "ethanol",
+      "alcohol",
+      "ethyl alcohol"
+    ],
+    "functions": [
+      "solvent",
+      "quick-dry"
+    ],
+    "description": "A quick-drying alcohol that makes products feel light and absorb fast. In small amounts it's fine. High up on the list, it can dry out and irritate skin, especially with daily use.",
+    "rating": "irritant",
+    "skinTypes": {
+      "dry": {
+        "fit": -1,
+        "note": "Can leave skin tighter and drier."
+      },
+      "sensitive": {
+        "fit": -1,
+        "note": "May sting, especially near the top of the list."
+      },
+      "oily": {
+        "fit": 0,
+        "note": "The mattifying feel is nice, but don't rely on it every day."
+      }
+    },
+    "faqs": [
+      {
+        "q": "Are all alcohols in skincare bad?",
+        "a": "No. Fatty alcohols like cetyl and cetearyl alcohol are soft and moisturising. It's mainly drying alcohols like alcohol denat. high up the list that are worth watching."
+      }
+    ]
+  },
+  {
+    "slug": "panthenol",
+    "name": "Panthenol",
+    "aliases": [
+      "d-panthenol",
+      "dexpanthenol",
+      "pro-vitamin b5",
+      "provitamin b5",
+      "vitamin b5"
+    ],
+    "functions": [
+      "soothing",
+      "hydrating",
+      "barrier support"
+    ],
+    "description": "Pro-vitamin B5. It turns into pantothenic acid in the skin and helps calm, hydrate and support a stressed barrier. Very gentle and plays well with everything.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Soothing and rarely irritating."
+      },
+      "dry": {
+        "fit": 1,
+        "note": "Adds comfortable hydration."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Helps calm skin using strong actives."
+      }
+    }
+  },
+  {
+    "slug": "allantoin",
+    "name": "Allantoin",
+    "aliases": [],
+    "functions": [
+      "soothing",
+      "skin conditioning"
+    ],
+    "description": "A gentle soothing ingredient that helps skin feel softer and calmer. It's a quiet supporting player you'll see in many sensitive-skin products.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Calming and well tolerated."
+      }
+    }
+  },
+  {
+    "slug": "centella-asiatica",
+    "name": "Centella Asiatica",
+    "aliases": [
+      "centella asiatica extract",
+      "cica",
+      "gotu kola",
+      "madecassoside",
+      "asiaticoside",
+      "madecassic acid",
+      "asiatic acid",
+      "centella asiatica leaf extract"
+    ],
+    "functions": [
+      "soothing",
+      "barrier support"
+    ],
+    "description": "A plant (also called gotu kola or 'cica') known in skincare for calming redness and supporting skin that's been through a lot. Very popular in K-beauty-inspired products.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "A go-to calming ingredient."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Helps soothe irritated, breakout-prone skin."
+      }
+    }
+  },
+  {
+    "slug": "squalane",
+    "name": "Squalane",
+    "aliases": [
+      "squalene",
+      "olive squalane",
+      "sugarcane squalane"
+    ],
+    "functions": [
+      "moisturising",
+      "emollient"
+    ],
+    "description": "A lightweight, stable oil that's very similar to the oils your skin makes. It softens and seals in moisture without feeling heavy, and it's unlikely to clog pores for most people.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Softens and seals in moisture."
+      },
+      "oily": {
+        "fit": 0,
+        "note": "Light enough for many, but use a small amount."
+      },
+      "sensitive": {
+        "fit": 1,
+        "note": "Gentle and fragrance-free in pure form."
+      }
+    }
+  },
+  {
+    "slug": "dimethicone",
+    "name": "Dimethicone",
+    "aliases": [
+      "polydimethylsiloxane",
+      "dimethiconol",
+      "cyclopentasiloxane",
+      "cyclomethicone",
+      "silicone"
+    ],
+    "functions": [
+      "emollient",
+      "texture",
+      "occlusive"
+    ],
+    "description": "A silicone that gives products a silky, smooth glide and forms a breathable layer that helps reduce water loss. Despite the internet myths, it's considered safe and doesn't 'suffocate' skin.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Helps lock in moisture."
+      },
+      "oily": {
+        "fit": 0,
+        "note": "Can feel nice and mattifying. Cleanse well at night."
+      },
+      "acne": {
+        "fit": 0,
+        "note": "Not known to clog pores for most people."
+      }
+    }
+  },
+  {
+    "slug": "phenoxyethanol",
+    "name": "Phenoxyethanol",
+    "aliases": [],
+    "functions": [
+      "preservative"
+    ],
+    "description": "One of the most common preservatives. It keeps bacteria and mould from growing in the product. It's used at low levels (up to 1%) and is generally well tolerated.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 0,
+        "note": "Rarely a problem, though a few people react to it."
+      }
+    }
+  },
+  {
+    "slug": "butylene-glycol",
+    "name": "Butylene Glycol",
+    "aliases": [
+      "1,3-butylene glycol",
+      "1,3-butanediol"
+    ],
+    "functions": [
+      "hydrating",
+      "solvent",
+      "texture"
+    ],
+    "description": "A lightweight humectant and solvent. It helps other ingredients spread evenly and adds a little hydration.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "propylene-glycol",
+    "name": "Propylene Glycol",
+    "aliases": [],
+    "functions": [
+      "hydrating",
+      "solvent"
+    ],
+    "description": "A humectant and solvent that helps other ingredients sink in. Fine for most people, though a small number with very sensitive skin react to it.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 0,
+        "note": "Occasionally irritating for very reactive skin."
+      }
+    }
+  },
+  {
+    "slug": "propanediol",
+    "name": "Propanediol",
+    "aliases": [
+      "1,3-propanediol",
+      "zemea"
+    ],
+    "functions": [
+      "hydrating",
+      "solvent"
+    ],
+    "description": "A plant-derived solvent and humectant, often made from corn sugar. It improves texture and adds light hydration.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "hexanediol",
+    "name": "1,2-Hexanediol",
+    "aliases": [
+      "hexanediol",
+      "1 2 hexanediol",
+      "1,2 hexanediol"
+    ],
+    "functions": [
+      "preservative booster",
+      "hydrating"
+    ],
+    "description": "A humectant that also helps preservatives work better, so brands can use less of them. Very common in Korean and Indian formulas.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "tocopherol",
+    "name": "Vitamin E (Tocopherol)",
+    "aliases": [
+      "tocopherol",
+      "tocopheryl acetate",
+      "vitamin e",
+      "dl-alpha tocopherol",
+      "mixed tocopherols"
+    ],
+    "functions": [
+      "antioxidant",
+      "moisturising"
+    ],
+    "description": "An antioxidant that helps protect skin and also stops the oils in a product from going off. Pairs especially well with vitamin C.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Adds softness."
+      },
+      "acne": {
+        "fit": 0,
+        "note": "Fine in serums. Heavy pure vitamin E oil can feel greasy."
+      }
+    }
+  },
+  {
+    "slug": "alpha-arbutin",
+    "name": "Alpha Arbutin",
+    "aliases": [
+      "arbutin",
+      "α-arbutin"
+    ],
+    "functions": [
+      "brightening"
+    ],
+    "description": "Helps fade the look of dark spots and uneven tone by calming down pigment production. Gentle and slow but steady. Results take weeks, with daily sunscreen.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "A gentle option for dark spots."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Helps with post-breakout marks."
+      }
+    }
+  },
+  {
+    "slug": "tranexamic-acid",
+    "name": "Tranexamic Acid",
+    "aliases": [
+      "txa"
+    ],
+    "functions": [
+      "brightening"
+    ],
+    "description": "A brightening ingredient that targets stubborn dark patches and uneven tone. It's not an exfoliating acid, so it's gentle and pairs well with most things.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Non-exfoliating and well tolerated."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Good for lingering marks."
+      }
+    }
+  },
+  {
+    "slug": "kojic-acid",
+    "name": "Kojic Acid",
+    "aliases": [
+      "kojic dipalmitate"
+    ],
+    "functions": [
+      "brightening"
+    ],
+    "description": "A brightening ingredient made by fungi during fermentation (think sake and soy sauce). It helps with dark spots but can irritate some people, especially at higher strengths.",
+    "rating": "care",
+    "skinTypes": {
+      "sensitive": {
+        "fit": -1,
+        "note": "Can cause redness. Patch-test."
+      }
+    }
+  },
+  {
+    "slug": "urea",
+    "name": "Urea",
+    "aliases": [
+      "carbamide"
+    ],
+    "functions": [
+      "hydrating",
+      "exfoliating (mild)"
+    ],
+    "description": "A natural moisturising factor in skin. At low strengths (around 5%) it hydrates. At higher strengths (10%+) it also softens rough, thick skin like on heels and elbows.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Excellent for rough, flaky skin."
+      },
+      "sensitive": {
+        "fit": 0,
+        "note": "Low % is gentle. High % can sting on broken skin."
+      }
+    }
+  },
+  {
+    "slug": "sodium-lauryl-sulfate",
+    "name": "Sodium Lauryl Sulfate",
+    "aliases": [
+      "sls",
+      "sodium dodecyl sulfate"
+    ],
+    "functions": [
+      "cleansing",
+      "foaming"
+    ],
+    "description": "A strong cleansing agent that makes lots of foam. It cleans well but can strip natural oils, leaving skin tight and irritated, especially on the face.",
+    "rating": "irritant",
+    "skinTypes": {
+      "dry": {
+        "fit": -1,
+        "note": "Can strip skin and leave it tight."
+      },
+      "sensitive": {
+        "fit": -1,
+        "note": "A common irritant in face washes."
+      },
+      "acne": {
+        "fit": -1,
+        "note": "Over-stripping can make skin more reactive."
+      }
+    }
+  },
+  {
+    "slug": "sodium-laureth-sulfate",
+    "name": "Sodium Laureth Sulfate",
+    "aliases": [
+      "sles"
+    ],
+    "functions": [
+      "cleansing",
+      "foaming"
+    ],
+    "description": "A slightly milder cousin of SLS. It's still a strong foaming cleanser that some skin finds drying.",
+    "rating": "care",
+    "skinTypes": {
+      "dry": {
+        "fit": -1,
+        "note": "Can feel stripping."
+      },
+      "sensitive": {
+        "fit": 0,
+        "note": "Milder than SLS but still worth watching."
+      }
+    }
+  },
+  {
+    "slug": "tea-tree-oil",
+    "name": "Tea Tree Oil",
+    "aliases": [
+      "melaleuca alternifolia leaf oil",
+      "melaleuca alternifolia oil",
+      "tea tree"
+    ],
+    "functions": [
+      "anti-acne",
+      "antibacterial",
+      "scent"
+    ],
+    "description": "An essential oil with some evidence for helping mild spots. It's also a known sensitiser: undiluted or at high strengths it can cause irritation or allergic reactions.",
+    "rating": "care",
+    "skinTypes": {
+      "acne": {
+        "fit": 0,
+        "note": "May help mild spots. Never use undiluted."
+      },
+      "sensitive": {
+        "fit": -1,
+        "note": "A common cause of reactions."
+      }
+    }
+  },
+  {
+    "slug": "lavender-oil",
+    "name": "Lavender Oil",
+    "aliases": [
+      "lavandula angustifolia oil",
+      "lavandula angustifolia flower oil",
+      "lavender essential oil"
+    ],
+    "functions": [
+      "scent"
+    ],
+    "description": "An essential oil mostly used for its scent. It contains compounds that can irritate skin, especially once they oxidise over time.",
+    "rating": "irritant",
+    "skinTypes": {
+      "sensitive": {
+        "fit": -1,
+        "note": "Best avoided on reactive skin."
+      }
+    }
+  },
+  {
+    "slug": "cetearyl-alcohol",
+    "name": "Cetearyl Alcohol",
+    "aliases": [
+      "cetyl alcohol",
+      "stearyl alcohol",
+      "cetostearyl alcohol",
+      "behenyl alcohol"
+    ],
+    "functions": [
+      "emollient",
+      "texture",
+      "emulsifier"
+    ],
+    "description": "A fatty alcohol made from plant oils. Unlike drying alcohols, it's soft and waxy and helps creams feel rich and stable. Not drying.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Adds creaminess and softness."
+      }
+    }
+  },
+  {
+    "slug": "shea-butter",
+    "name": "Shea Butter",
+    "aliases": [
+      "butyrospermum parkii butter",
+      "butyrospermum parkii (shea) butter",
+      "vitellaria paradoxa butter"
+    ],
+    "functions": [
+      "moisturising",
+      "emollient"
+    ],
+    "description": "A rich butter from shea nuts that softens and protects very dry skin. It's lovely in body creams, but can feel heavy on oily, acne-prone faces.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Deeply nourishing."
+      },
+      "oily": {
+        "fit": -1,
+        "note": "Can feel greasy on oily faces."
+      },
+      "acne": {
+        "fit": 0,
+        "note": "Rich textures may not suit everyone with breakouts."
+      }
+    }
+  },
+  {
+    "slug": "zinc-pca",
+    "name": "Zinc PCA",
+    "aliases": [
+      "zinc pyrrolidone carboxylic acid"
+    ],
+    "functions": [
+      "oil control",
+      "hydrating"
+    ],
+    "description": "Zinc paired with PCA, a natural moisturising factor. It's often added to oily-skin products to help balance shine.",
+    "rating": "good",
+    "skinTypes": {
+      "oily": {
+        "fit": 1,
+        "note": "Helps with shine."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Common in breakout-focused formulas."
+      }
+    }
+  },
+  {
+    "slug": "copper-peptides",
+    "name": "Copper Peptides",
+    "aliases": [
+      "copper tripeptide-1",
+      "ghk-cu"
+    ],
+    "functions": [
+      "anti-ageing",
+      "barrier support"
+    ],
+    "description": "Peptides bound to copper, used for firmness and skin recovery. They can be destabilised by strong acids and pure vitamin C, so it's usually best to use them at a different time of day.",
+    "rating": "good",
+    "groups": [
+      "copper-peptide"
+    ],
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Supports a stressed barrier."
+      },
+      "sensitive": {
+        "fit": 0,
+        "note": "Usually gentle. Patch-test."
+      }
+    }
+  },
+  {
+    "slug": "peptides",
+    "name": "Peptides",
+    "aliases": [
+      "palmitoyl tripeptide-1",
+      "palmitoyl tetrapeptide-7",
+      "palmitoyl pentapeptide-4",
+      "matrixyl",
+      "acetyl hexapeptide-8",
+      "argireline",
+      "palmitoyl tripeptide-5"
+    ],
+    "functions": [
+      "anti-ageing"
+    ],
+    "description": "Short chains of amino acids that act as messengers in the skin. They're used to support firmness and smoothness. Gentle and easy to add to any routine, though results are subtle.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Low irritation potential."
+      }
+    }
+  },
+  {
+    "slug": "xanthan-gum",
+    "name": "Xanthan Gum",
+    "aliases": [],
+    "functions": [
+      "thickener"
+    ],
+    "description": "A natural thickener made by fermenting sugar. It gives gels and serums their body. Inactive on skin.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "carbomer",
+    "name": "Carbomer",
+    "aliases": [
+      "acrylates/c10-30 alkyl acrylate crosspolymer"
+    ],
+    "functions": [
+      "thickener",
+      "texture"
+    ],
+    "description": "A thickener that turns watery formulas into gels. Gives that bouncy, clear gel texture. Inactive on skin.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "disodium-edta",
+    "name": "Disodium EDTA",
+    "aliases": [
+      "edta",
+      "tetrasodium edta",
+      "trisodium edta"
+    ],
+    "functions": [
+      "stabiliser"
+    ],
+    "description": "A helper ingredient that grabs minerals from water so the formula stays stable and preservatives work better. Used in tiny amounts.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "sodium-hydroxide",
+    "name": "Sodium Hydroxide",
+    "aliases": [
+      "potassium hydroxide"
+    ],
+    "functions": [
+      "pH adjuster"
+    ],
+    "description": "Used in tiny amounts to set the product's pH so it's comfortable on skin and works properly. By the time it's in the bottle it has been neutralised, so it isn't harsh.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "ethylhexylglycerin",
+    "name": "Ethylhexylglycerin",
+    "aliases": [],
+    "functions": [
+      "preservative booster",
+      "skin conditioning"
+    ],
+    "description": "Often paired with phenoxyethanol to make the preservative system work better. Also gives a light, non-greasy feel.",
+    "rating": "good",
+    "skinTypes": {}
+  }
+]
