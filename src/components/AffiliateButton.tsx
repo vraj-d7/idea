@@ -1,20 +1,6 @@
-/**
- * Outbound affiliate link. If AFFILIATE_TAG_PARAM and AFFILIATE_TAG_VALUE are
- * set, the tag is added to the URL, e.g. ?tag=yourstore-21 for Amazon.
- */
-export function withAffiliateTag(url: string): string {
-  const param = process.env.AFFILIATE_TAG_PARAM;
-  const value = process.env.AFFILIATE_TAG_VALUE;
-  if (!param || !value) return url;
-  try {
-    const u = new URL(url);
-    u.searchParams.set(param, value);
-    return u.toString();
-  } catch {
-    return url;
-  }
-}
+import { withAffiliateTag } from "@/lib/affiliate";
 
+/** Outbound affiliate link. Put an <AffiliateDisclosure /> near it. */
 export function AffiliateButton({
   href,
   productName,
