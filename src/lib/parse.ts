@@ -13,7 +13,9 @@ export function splitIngredients(text: string): string[] {
     .replace(/(\bmay contain|\+\/-)\s*:?/gi, ",");
 
   return body
-    .split(/(?<!\d),|,(?!\d)|;|\n|\r|•|·|\|/)
+    // Blends are written "Phenoxyethanol (and) Ethylhexylglycerin" or
+    // "Allantoin and Sodium Gluconate": treat each part as its own ingredient.
+    .split(/(?<!\d),|,(?!\d)|;|\n|\r|•|·|\||\s\(and\)\s|\s+and\s+(?=[A-Z])/)
     .map((s) => s.trim().replace(/^[\s.*\-–]+|[\s.*]+$/g, ""))
     .filter((s) => s.length > 0);
 }

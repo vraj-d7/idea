@@ -54,6 +54,7 @@ export default async function ProductPage({ params }: PageProps<"/product/[slug]
   const alternatives = findAlternatives(product.keyIngredients, products, ingredients, {
     maxPrice: product.priceInr,
     excludeSlug: product.slug,
+    category: product.category,
   });
   const keyNames = product.keyIngredients
     .map((s) => ingredients.find((i) => i.slug === s))

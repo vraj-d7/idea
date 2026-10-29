@@ -25,6 +25,7 @@ type RawProduct = {
   slug: string;
   name: string;
   brand: string;
+  category?: string;
   priceInr: number;
   ingredients: string[];
   keyIngredients: string[];
@@ -92,6 +93,7 @@ async function main() {
         slug: p.slug,
         name: p.name,
         brand: p.brand,
+        category: p.category ?? null,
         priceInr: p.priceInr,
         ingredients: p.ingredients,
         keyIngredients: p.keyIngredients,

@@ -84,10 +84,18 @@ describe("analyze", () => {
   });
 
   it("finds the retinol + glycolic clash in a full label", () => {
-    const sample = products.find((p) => p.slug === "dewdrop-retinol-glycolic-night-serum")!;
-    const a = run(sample.ingredients.join(", "));
+    const a = run("Aqua, Glycolic Acid, Propanediol, Squalane, Retinol, Niacinamide, Tocopherol, Sodium Hydroxide, Parfum");
     expect(a.unmatched).toEqual([]);
     expect(a.conflicts[0].severity).toBe("high");
+  });
+});
+
+describe("catalog labels", () => {
+  it.each(products.map((p) => [p.slug, p] as const))("%s parses with few unidentified ingredients", (_slug, p) => {
+    const a = run(p.ingredients.join(", "));
+    // Real labels contain plenty of niche ingredients; keep the miss rate sane.
+    expect(a.unmatched.length / p.ingredients.length).toBeLessThan(0.5);
+    for (const key of p.keyIngredients) expect(a.items.map((i) => i.ingredient.slug)).toContain(key);
   });
 });
 
@@ -96,8 +104,8 @@ describe("identifyProduct", () => {
   const slugsOf = (text: string) => parseIngredientList(text, index).map((p) => p.slug);
 
   it("recognises a pasted label from the catalog, even with spelling differences", () => {
-    const serum = products.find((p) => p.slug === "glowlab-vitamin-c-15-serum")!;
-    const pasted = serum.ingredients.join(", ").replace("Aqua", "Water").replace("Fragrance", "Parfum");
+    const serum = products.find((p) => p.slug === "minimalist-vitamin-c-10-face-serum")!;
+    const pasted = serum.ingredients.join(", ").replace("Glycerin", "Glycerine").replace("3-O-Ethyl Ascorbic Acid", "Ethyl Ascorbic Acid");
     expect(identifyProduct(slugsOf(pasted), products, matchSlug)?.slug).toBe(serum.slug);
   });
 
@@ -107,21 +115,33 @@ describe("identifyProduct", () => {
 });
 
 describe("findAlternatives", () => {
-  it("only suggests cheaper products for a product page", () => {
-    const serum = products.find((p) => p.slug === "glowlab-vitamin-c-15-serum")!;
-    const alts = findAlternatives(serum.keyIngredients, products, ingredients, {
-      maxPrice: serum.priceInr,
-      excludeSlug: serum.slug,
-    });
+  const forProduct = (slug: string) => {
+    const p = products.find((x) => x.slug === slug)!;
+    return { p, alts: findAlternatives(p.keyIngredients, products, ingredients, { maxPrice: p.priceInr, excludeSlug: p.slug, category: p.category }) };
+  };
+
+  it("only suggests cheaper products in the same category", () => {
+    const { p, alts } = forProduct("minimalist-ceramides-madecassoside-moisturizer");
     expect(alts.length).toBeGreaterThan(0);
-    for (const alt of alts) expect(alt.product.priceInr).toBeLessThan(serum.priceInr);
-    // Matched through the shared vitamin-c group, not the exact same slug.
-    expect(alts[0].product.slug).toBe("kasa-ethyl-ascorbic-vitamin-c-serum");
+    for (const alt of alts) {
+      expect(alt.product.priceInr).toBeLessThan(p.priceInr);
+      expect(alt.product.category).toBe("moisturiser");
+    }
+  });
+
+  it("never offers a face wash as an alternative to a serum", () => {
+    const { alts } = forProduct("minimalist-salicylic-acid-2-face-serum");
+    expect(alts.map((a) => a.product.category)).not.toContain("cleanser");
+  });
+
+  it("matches sunscreens through shared UV-filter families", () => {
+    const { alts } = forProduct("minimalist-spf-50-sunscreen");
+    expect(alts.map((a) => a.product.slug)).toContain("reequil-oxybenzone-omc-free-sunscreen");
   });
 
   it("does not treat AHAs and BHAs as the same thing", () => {
     const alts = findAlternatives(["glycolic-acid"], products, ingredients);
-    expect(alts.map((a) => a.product.slug)).not.toContain("glowlab-salicylic-2-serum");
+    expect(alts.map((a) => a.product.slug)).not.toContain("minimalist-salicylic-acid-2-face-serum");
   });
 
   it("ignores water and preservatives when picking key ingredients", () => {

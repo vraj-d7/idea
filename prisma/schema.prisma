@@ -48,6 +48,8 @@ model Product {
   slug           String  @unique
   name           String
   brand          String
+  /// "serum" | "moisturiser" | "cleanser" | "sunscreen" | ... Alternatives stay within a category.
+  category       String?
   /// Price in whole rupees
   priceInr       Int
   /// string[]: ingredient names in label order, as printed

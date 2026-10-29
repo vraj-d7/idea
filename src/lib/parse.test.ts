@@ -39,6 +39,20 @@ describe("splitIngredients", () => {
     expect(splitIngredients("Water, Glycerin. May contain: CI 77891")).toEqual(["Water", "Glycerin", "CI 77891"]);
   });
 
+  it("splits blends written with (and) or 'and'", () => {
+    expect(splitIngredients("Aqua, Phenoxyethanol (and) Ethylhexylglycerin, Allantoin and Sodium Gluconate.")).toEqual([
+      "Aqua",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin",
+      "Allantoin",
+      "Sodium Gluconate",
+    ]);
+  });
+
+  it("does not split 'and' inside a lowercase description", () => {
+    expect(splitIngredients("Water, cocoa and shea blend")).toEqual(["Water", "cocoa and shea blend"]);
+  });
+
   it("ignores empty entries", () => {
     expect(splitIngredients(" , ,Water,, ")).toEqual(["Water"]);
   });

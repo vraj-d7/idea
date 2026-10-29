@@ -54,6 +54,7 @@ async function Result({ params }: Pick<PageProps<"/result/[id]">, "params">) {
   const alternatives = findAlternatives(keys, products, ingredients, {
     excludeSlug: known?.slug,
     maxPrice: known?.priceInr,
+    category: known?.category,
   });
 
   const counts = {

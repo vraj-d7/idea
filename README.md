@@ -96,6 +96,7 @@ All catalog data lives in `prisma/data/`. Edit the JSON, then run `npm run db:se
   "slug": "brand-product-name",
   "name": "Product Name",
   "brand": "Brand",
+  "category": "serum",
   "priceInr": 499,
   "ingredients": ["Aqua", "Niacinamide", "…in label order…"],
   "keyIngredients": ["niacinamide"],
@@ -105,8 +106,13 @@ All catalog data lives in `prisma/data/`. Edit the JSON, then run `npm run db:se
 }
 ```
 
-- `ingredients` is the label as printed, in order. `keyIngredients` are ingredient slugs and drive "cheaper alternatives".
-- **The 12 products that ship with the repo are made-up placeholders** ("… (sample)" brands, `example.com` links). Replace them with real products and set `"placeholder": false`. Placeholder products are `noindex` and left out of the sitemap.
+- `ingredients` is the label as printed, in order. Copy it from the brand's official product page or the pack, not from a reseller. `keyIngredients` are ingredient slugs and drive "cheaper alternatives".
+- `category` (`serum`, `moisturiser`, `cleanser`, `sunscreen`, …) keeps alternatives like-for-like, so a face wash is never suggested in place of a serum.
+- `priceInr` is the MRP for the size in the product name. Prices change, so re-check them now and then.
+- `affiliateUrl` currently points at each brand's own product page. Swap in your affiliate links (Amazon Associates, Nykaa, Cuelinks, …) as you join programs. `AFFILIATE_TAG_*` only helps for stores that use a URL tag, like Amazon.
+- Set `"placeholder": true` for any made-up test product. Placeholder products are `noindex` and left out of the sitemap.
+
+**Current catalog:** 14 real products from Minimalist, The Derma Co, Deconstruct, Plum and Re'equil. Ingredient lists and MRPs were taken from each brand's official product page on 29 Oct 2026. Obvious typos on those pages were fixed ("Cholestrol" → "Cholesterol", "Ethylexanoate" → "Ethylhexanoate"), and "(and)" blends were split into separate ingredients. A unit test checks that every catalog label parses with fewer than half its ingredients unidentified, and that each product's key ingredients are recognised.
 
 ## How it works
 

@@ -45,6 +45,7 @@ export type ProductData = {
   slug: string;
   name: string;
   brand: string;
+  category: string | null;
   priceInr: number;
   ingredients: string[];
   keyIngredients: string[];

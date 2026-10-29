@@ -3,9 +3,9 @@ import { AnalyzeForm, type Example } from "@/components/AnalyzeForm";
 import { getIngredients, getProducts } from "@/lib/data";
 
 const EXAMPLE_SLUGS = [
-  "dewdrop-retinol-glycolic-night-serum",
-  "glowlab-vitamin-c-15-serum",
-  "mellow-ceramide-barrier-cream",
+  "minimalist-salicylic-acid-2-face-serum",
+  "minimalist-retinol-0-3-face-serum",
+  "reequil-ceramide-hyaluronic-acid-moisturiser",
 ];
 
 const POPULAR = [

@@ -102,7 +102,9 @@
       "hydrolyzed hyaluronic acid",
       "hydrolysed hyaluronic acid",
       "sodium acetylated hyaluronate",
-      "hyaluronan"
+      "hyaluronan",
+      "sodium hyaluronate crosspolymer",
+      "hydrolyzed sodium hyaluronate"
     ],
     "functions": [
       "hydrating",
@@ -578,7 +580,8 @@
       "ceramide 1",
       "ceramide 6 ii",
       "ceramide eos",
-      "ceramide"
+      "ceramide",
+      "ceramide as"
     ],
     "functions": [
       "barrier support",
@@ -671,7 +674,10 @@
         "fit": 0,
         "note": "Some zinc formulas feel dry. Moisturise underneath."
       }
-    }
+    },
+    "groups": [
+      "uv-filter"
+    ]
   },
   {
     "slug": "titanium-dioxide",
@@ -690,7 +696,10 @@
         "fit": 1,
         "note": "Rarely irritating."
       }
-    }
+    },
+    "groups": [
+      "uv-filter"
+    ]
   },
   {
     "slug": "fragrance",
@@ -873,7 +882,8 @@
       "dimethiconol",
       "cyclopentasiloxane",
       "cyclomethicone",
-      "silicone"
+      "silicone",
+      "caprylyl methicone"
     ],
     "functions": [
       "emollient",
@@ -1194,7 +1204,9 @@
       "cetyl alcohol",
       "stearyl alcohol",
       "cetostearyl alcohol",
-      "behenyl alcohol"
+      "behenyl alcohol",
+      "arachidyl alcohol",
+      "c14-22 alcohols"
     ],
     "functions": [
       "emollient",
@@ -1375,6 +1387,1075 @@
       "skin conditioning"
     ],
     "description": "Often paired with phenoxyethanol to make the preservative system work better. Also gives a light, non-greasy feel.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "octocrylene",
+    "name": "Octocrylene",
+    "aliases": [],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "A chemical UV filter that mainly covers UVB and some short UVA. It's often paired with avobenzone because it helps keep avobenzone stable in sunlight. Well tolerated by most, though a small number of people are sensitive to it.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 0,
+        "note": "Fine for most. A few people react to it."
+      }
+    }
+  },
+  {
+    "slug": "avobenzone",
+    "name": "Avobenzone",
+    "aliases": [
+      "butyl methoxydibenzoylmethane"
+    ],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "One of the main UVA filters in chemical sunscreens. UVA is the part of sunlight linked to tanning and long-term skin damage. On its own it breaks down in sunlight, so formulas pair it with stabilising filters like octocrylene.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "ethylhexyl-triazone",
+    "name": "Ethylhexyl Triazone",
+    "aliases": [
+      "uvinul t 150",
+      "octyl triazone"
+    ],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "A strong, very photostable UVB filter. Because it's so efficient, brands can use small amounts of it. Used widely in European and Asian sunscreens.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "bemotrizinol",
+    "name": "Bemotrizinol (Tinosorb S)",
+    "aliases": [
+      "bis-ethylhexyloxyphenol methoxyphenyl triazine",
+      "tinosorb s",
+      "bemt"
+    ],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "A modern broad-spectrum filter that covers both UVA and UVB. It's very stable in sunlight and helps stabilise other filters too. Generally very well tolerated.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "A gentle, stable filter."
+      }
+    }
+  },
+  {
+    "slug": "bisoctrizole",
+    "name": "Bisoctrizole (Tinosorb M)",
+    "aliases": [
+      "methylene bis-benzotriazolyl tetramethylbutylphenol",
+      "tinosorb m"
+    ],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "A broad-spectrum filter made of tiny particles that both absorb and scatter UV light, covering UVB and long UVA. Very photostable.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "tris-biphenyl-triazine",
+    "name": "Tris-Biphenyl Triazine (Tinosorb A2B)",
+    "aliases": [
+      "tinosorb a2b"
+    ],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "A newer, very stable filter that covers UVB and the shorter end of UVA. Usually combined with other filters for full coverage.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "ethylhexyl-salicylate",
+    "name": "Ethylhexyl Salicylate (Octisalate)",
+    "aliases": [
+      "octisalate",
+      "octyl salicylate"
+    ],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "A UVB filter that also helps spread other filters evenly. Despite the name, it is not an exfoliant and doesn't behave like salicylic acid on skin.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "oxybenzone",
+    "name": "Oxybenzone",
+    "aliases": [
+      "benzophenone-3"
+    ],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "An older UVB and short-UVA filter. It's one of the more common causes of sunscreen allergies, which is why many brands now advertise 'oxybenzone-free' formulas.",
+    "rating": "care",
+    "skinTypes": {
+      "sensitive": {
+        "fit": -1,
+        "note": "A more common cause of sunscreen reactions."
+      }
+    }
+  },
+  {
+    "slug": "octinoxate",
+    "name": "Octinoxate",
+    "aliases": [
+      "ethylhexyl methoxycinnamate",
+      "octyl methoxycinnamate",
+      "omc"
+    ],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "A widely used UVB filter. It breaks down in sunlight unless paired with stabilising filters, and some people with sensitive skin find it irritating.",
+    "rating": "care",
+    "skinTypes": {
+      "sensitive": {
+        "fit": -1,
+        "note": "Can irritate reactive skin."
+      }
+    }
+  },
+  {
+    "slug": "pentylene-glycol",
+    "name": "Pentylene Glycol",
+    "aliases": [
+      "1,2-pentanediol"
+    ],
+    "functions": [
+      "hydrating",
+      "preservative booster"
+    ],
+    "description": "A light humectant that also helps keep products free of microbes, so less preservative is needed. Very common in modern serums.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "dimethyl-isosorbide",
+    "name": "Dimethyl Isosorbide",
+    "aliases": [
+      "dmi"
+    ],
+    "functions": [
+      "solvent",
+      "penetration enhancer"
+    ],
+    "description": "A plant-derived solvent that helps active ingredients dissolve and sink into skin. It improves how a formula performs rather than doing much itself.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "ethoxydiglycol",
+    "name": "Ethoxydiglycol",
+    "aliases": [
+      "transcutol"
+    ],
+    "functions": [
+      "solvent",
+      "penetration enhancer"
+    ],
+    "description": "A solvent that helps dissolve actives like niacinamide or vitamin C derivatives and helps them reach the skin. Inactive on its own.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "caprylic-capric-triglyceride",
+    "name": "Caprylic/Capric Triglyceride",
+    "aliases": [
+      "mct oil",
+      "fractionated coconut oil"
+    ],
+    "functions": [
+      "emollient",
+      "moisturising"
+    ],
+    "description": "A light, non-greasy oil made from coconut or palm. It softens skin and helps oil-based ingredients like retinol dissolve. Stable and well tolerated.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Softens without heaviness."
+      }
+    }
+  },
+  {
+    "slug": "dicaprylyl-carbonate",
+    "name": "Dicaprylyl Carbonate",
+    "aliases": [],
+    "functions": [
+      "emollient"
+    ],
+    "description": "A fast-spreading, dry-feeling emollient. It gives creams and sunscreens a silky, non-greasy finish.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "isododecane",
+    "name": "Isododecane",
+    "aliases": [],
+    "functions": [
+      "emollient",
+      "solvent"
+    ],
+    "description": "A lightweight, volatile ingredient that gives a smooth glide and then evaporates, leaving a weightless feel. Common in sunscreens and oil serums.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "octyldodecanol",
+    "name": "Octyldodecanol",
+    "aliases": [],
+    "functions": [
+      "emollient"
+    ],
+    "description": "An oily liquid that softens skin and helps dissolve other ingredients. Despite 'ol' in the name, it is not a drying alcohol.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "betaine",
+    "name": "Betaine",
+    "aliases": [],
+    "functions": [
+      "hydrating",
+      "soothing"
+    ],
+    "description": "A humectant from sugar beets that helps skin hold water. In cleansers it softens the feel of surfactants so skin feels less stripped.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Gentle and hydrating."
+      }
+    }
+  },
+  {
+    "slug": "sodium-pca",
+    "name": "Sodium PCA",
+    "aliases": [],
+    "functions": [
+      "hydrating",
+      "humectant"
+    ],
+    "description": "Part of skin's own natural moisturising factor. It draws water into the top layer of skin.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Natural-feeling hydration."
+      }
+    }
+  },
+  {
+    "slug": "sodium-lactate",
+    "name": "Sodium Lactate",
+    "aliases": [],
+    "functions": [
+      "hydrating",
+      "pH adjuster"
+    ],
+    "description": "The salt form of lactic acid. It works as a humectant and helps adjust pH. Unlike lactic acid itself, it doesn't exfoliate.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "citric-acid",
+    "name": "Citric Acid",
+    "aliases": [],
+    "functions": [
+      "pH adjuster"
+    ],
+    "description": "Used in small amounts to bring a formula to the right pH. At the levels used for this, it doesn't exfoliate.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "sodium-citrate",
+    "name": "Sodium Citrate",
+    "aliases": [],
+    "functions": [
+      "pH adjuster",
+      "stabiliser"
+    ],
+    "description": "Works with citric acid to keep a product's pH steady over its shelf life.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "triethanolamine",
+    "name": "Triethanolamine",
+    "aliases": [],
+    "functions": [
+      "pH adjuster"
+    ],
+    "description": "Used in small amounts to balance pH and thicken gels. Once neutralised in the formula, it's generally not irritating at typical levels.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "sodium-gluconate",
+    "name": "Sodium Gluconate",
+    "aliases": [],
+    "functions": [
+      "stabiliser"
+    ],
+    "description": "Binds to trace metals in water so the formula stays stable and the preservatives work well. Used in tiny amounts.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "trisodium-ethylenediamine-disuccinate",
+    "name": "Trisodium Ethylenediamine Disuccinate",
+    "aliases": [
+      "edds"
+    ],
+    "functions": [
+      "stabiliser"
+    ],
+    "description": "A biodegradable helper that binds trace metals and keeps the formula stable. An eco-friendlier alternative to EDTA.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "lecithin",
+    "name": "Lecithin",
+    "aliases": [
+      "hydrogenated lecithin"
+    ],
+    "functions": [
+      "emulsifier",
+      "skin conditioning"
+    ],
+    "description": "A natural fat usually taken from soy or sunflower. It helps oil and water mix, and can wrap actives in tiny bubbles (liposomes) for delivery.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "gums-and-celluloses",
+    "name": "Gums & Celluloses",
+    "aliases": [
+      "hydroxyethylcellulose",
+      "sclerotium gum",
+      "pullulan",
+      "cellulose gum",
+      "hydroxypropyl methylcellulose"
+    ],
+    "functions": [
+      "thickener",
+      "film former"
+    ],
+    "description": "Plant-based gums and celluloses that thicken serums and leave a light film on skin. Inactive on their own.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "polysorbate-20",
+    "name": "Polysorbate 20",
+    "aliases": [],
+    "functions": [
+      "emulsifier",
+      "solubiliser"
+    ],
+    "description": "Helps small amounts of oil mix into watery formulas. Used at low levels and generally well tolerated.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "glyceryl-stearate",
+    "name": "Glyceryl Stearate",
+    "aliases": [
+      "peg-100 stearate",
+      "glyceryl stearate se"
+    ],
+    "functions": [
+      "emulsifier",
+      "emollient"
+    ],
+    "description": "Keeps creams from separating and adds a soft, smooth feel. One of the most common building blocks of lotions.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "acetyl-glucosamine",
+    "name": "Acetyl Glucosamine",
+    "aliases": [
+      "n-acetyl glucosamine",
+      "nag"
+    ],
+    "functions": [
+      "brightening",
+      "hydrating"
+    ],
+    "description": "An amino sugar that supports skin's natural hydration. It's often combined with niacinamide to help even out the look of dark spots.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Gentle, non-acidic brightening."
+      }
+    }
+  },
+  {
+    "slug": "gluconolactone",
+    "name": "Gluconolactone",
+    "aliases": [
+      "pha",
+      "polyhydroxy acid"
+    ],
+    "functions": [
+      "exfoliating (mild)",
+      "hydrating"
+    ],
+    "description": "A polyhydroxy acid (PHA). Its large molecules exfoliate the surface very gently and also attract water. It's often the acid of choice for sensitive skin.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "One of the gentlest exfoliating acids."
+      },
+      "dry": {
+        "fit": 1,
+        "note": "Exfoliates while hydrating."
+      }
+    }
+  },
+  {
+    "slug": "cholesterol",
+    "name": "Cholesterol",
+    "aliases": [],
+    "functions": [
+      "barrier support",
+      "moisturising"
+    ],
+    "description": "One of the three main fats in the skin barrier, alongside ceramides and fatty acids. Products that combine all three aim to mimic skin's own mix.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Helps rebuild a dry barrier."
+      },
+      "sensitive": {
+        "fit": 1,
+        "note": "Supports a stressed barrier."
+      }
+    }
+  },
+  {
+    "slug": "oat-extract",
+    "name": "Oat Extract",
+    "aliases": [
+      "avena sativa kernel extract",
+      "avena sativa (oat) kernel extract",
+      "colloidal oatmeal",
+      "avena sativa kernel flour",
+      "oat kernel extract"
+    ],
+    "functions": [
+      "soothing",
+      "barrier support"
+    ],
+    "description": "Oats have a long history of calming dry, itchy skin. In skincare they help soothe and protect.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Calming for reactive skin."
+      },
+      "dry": {
+        "fit": 1,
+        "note": "Soothes tight, dry skin."
+      }
+    }
+  },
+  {
+    "slug": "aloe-vera",
+    "name": "Aloe Vera",
+    "aliases": [
+      "aloe barbadensis leaf juice",
+      "aloe barbadensis extract",
+      "aloe barbadensis leaf extract",
+      "aloe barbadensis leaf juice powder",
+      "aloe vera gel"
+    ],
+    "functions": [
+      "soothing",
+      "hydrating"
+    ],
+    "description": "The familiar gel from aloe leaves. It adds light hydration and a cooling, calming feel.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Usually calming."
+      }
+    }
+  },
+  {
+    "slug": "cocamidopropyl-betaine",
+    "name": "Cocamidopropyl Betaine",
+    "aliases": [],
+    "functions": [
+      "cleansing",
+      "foaming"
+    ],
+    "description": "A mild, coconut-derived cleansing agent that boosts foam and softens harsher surfactants. A staple of gentle face washes.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "glucoside-cleansers",
+    "name": "Glucoside Cleansers",
+    "aliases": [
+      "decyl glucoside",
+      "coco-glucoside",
+      "caprylyl/capryl glucoside",
+      "lauryl glucoside"
+    ],
+    "functions": [
+      "cleansing"
+    ],
+    "description": "Very gentle sugar-based cleansing agents. They clean without stripping much oil, so they suit sensitive and dry skin.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "One of the gentlest cleanser types."
+      }
+    }
+  },
+  {
+    "slug": "sodium-lauroyl-sarcosinate",
+    "name": "Sodium Lauroyl Sarcosinate",
+    "aliases": [],
+    "functions": [
+      "cleansing",
+      "foaming"
+    ],
+    "description": "An amino-acid-based cleanser that foams well but is much milder than sulfates like SLS.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "sodium-methyl-cocoyl-taurate",
+    "name": "Sodium Methyl Cocoyl Taurate",
+    "aliases": [],
+    "functions": [
+      "cleansing",
+      "foaming"
+    ],
+    "description": "Gentle amino-acid-derived cleansing agents that leave skin feeling clean without the tight, squeaky feel of harsher sulfates.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "sodium-cocoyl-isethionate",
+    "name": "Sodium Cocoyl Isethionate",
+    "aliases": [],
+    "functions": [
+      "cleansing",
+      "foaming"
+    ],
+    "description": "A mild, creamy-foaming cleanser often used in 'syndet' bars and gentle face washes. Kinder to the skin barrier than traditional soap.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "xylitol",
+    "name": "Xylitol (Aquaxyl)",
+    "aliases": [
+      "xylitylglucoside",
+      "anhydroxylitol",
+      "aquaxyl"
+    ],
+    "functions": [
+      "hydrating"
+    ],
+    "description": "Plant-sugar-based humectants, often sold together as the 'Aquaxyl' complex. They help skin hold onto water.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Helps with hydration."
+      }
+    }
+  },
+  {
+    "slug": "saccharide-isomerate",
+    "name": "Saccharide Isomerate",
+    "aliases": [],
+    "functions": [
+      "hydrating"
+    ],
+    "description": "A sugar complex that binds to skin and keeps releasing hydration for hours, even after rinsing.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Long-lasting hydration."
+      }
+    }
+  },
+  {
+    "slug": "witch-hazel",
+    "name": "Witch Hazel",
+    "aliases": [
+      "hamamelis virginiana extract",
+      "hamamelis virginiana water",
+      "hamamelis virginiana (witch hazel) water",
+      "hamamelis virginiana leaf extract"
+    ],
+    "functions": [
+      "astringent",
+      "toning"
+    ],
+    "description": "A plant extract used to give a toned, tightened feel. Some versions are made with alcohol and contain tannins that can be drying or irritating for sensitive skin.",
+    "rating": "care",
+    "skinTypes": {
+      "oily": {
+        "fit": 0,
+        "note": "The tightening feel suits some oily skin."
+      },
+      "sensitive": {
+        "fit": -1,
+        "note": "Can irritate, especially alcohol-based versions."
+      },
+      "dry": {
+        "fit": -1,
+        "note": "May feel drying."
+      }
+    }
+  },
+  {
+    "slug": "jojoba-oil",
+    "name": "Jojoba Oil",
+    "aliases": [
+      "simmondsia chinensis seed oil",
+      "simmondsia chinensis (jojoba) seed oil"
+    ],
+    "functions": [
+      "emollient",
+      "moisturising"
+    ],
+    "description": "Technically a liquid wax that closely resembles skin's own oils. It softens and protects without feeling heavy.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Nourishing and light."
+      }
+    }
+  },
+  {
+    "slug": "mango-butter",
+    "name": "Mango Butter",
+    "aliases": [
+      "mangifera indica seed butter",
+      "mangifera indica (mango) seed butter"
+    ],
+    "functions": [
+      "emollient",
+      "moisturising"
+    ],
+    "description": "A soft butter from mango seeds that cushions and moisturises dry skin. Lighter than shea, but still rich.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Rich, comforting moisture."
+      },
+      "oily": {
+        "fit": 0,
+        "note": "Might feel heavy on very oily faces."
+      }
+    }
+  },
+  {
+    "slug": "mineral-oil",
+    "name": "Mineral Oil",
+    "aliases": [
+      "paraffinum liquidum",
+      "liquid paraffin",
+      "paraffin oil"
+    ],
+    "functions": [
+      "occlusive",
+      "moisturising"
+    ],
+    "description": "A highly purified oil that forms a protective layer to stop water escaping from skin. Cosmetic-grade mineral oil is very unlikely to irritate, despite its reputation.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Very effective at locking in moisture."
+      },
+      "oily": {
+        "fit": 0,
+        "note": "Can feel heavy on oily skin."
+      }
+    }
+  },
+  {
+    "slug": "menthol",
+    "name": "Menthol & Menthyl Lactate",
+    "aliases": [
+      "menthyl lactate",
+      "menthoxypropanediol"
+    ],
+    "functions": [
+      "cooling",
+      "scent"
+    ],
+    "description": "A menthol-derived ingredient that gives a cooling, tingling sensation. The tingle feels fresh but isn't a sign it's working, and it can bother sensitive skin.",
+    "rating": "care",
+    "skinTypes": {
+      "sensitive": {
+        "fit": -1,
+        "note": "The cooling effect can irritate."
+      }
+    }
+  },
+  {
+    "slug": "coenzyme-q10",
+    "name": "Coenzyme Q10",
+    "aliases": [
+      "ubiquinone",
+      "coq10"
+    ],
+    "functions": [
+      "antioxidant"
+    ],
+    "description": "An antioxidant that skin also makes on its own. In skincare it helps protect against daily environmental stress.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "bht",
+    "name": "BHT",
+    "aliases": [
+      "butylated hydroxytoluene"
+    ],
+    "functions": [
+      "antioxidant (formula)"
+    ],
+    "description": "A tiny amount is added to keep oils and sensitive actives like retinol from going off in the bottle. It protects the product, not your skin.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "silica",
+    "name": "Silica",
+    "aliases": [
+      "silica silylate",
+      "hydrated silica"
+    ],
+    "functions": [
+      "oil absorbing",
+      "texture"
+    ],
+    "description": "Fine mineral powder that soaks up excess oil and gives a matte, smooth finish. Common in sunscreens and mattifying products.",
+    "rating": "good",
+    "skinTypes": {
+      "oily": {
+        "fit": 1,
+        "note": "Helps keep shine down."
+      }
+    }
+  },
+  {
+    "slug": "sodium-cocoyl-glutamate",
+    "name": "Sodium Cocoyl Glutamate",
+    "aliases": [
+      "disodium cocoyl glutamate"
+    ],
+    "functions": [
+      "cleansing"
+    ],
+    "description": "A very mild cleansing agent made from coconut fatty acids and an amino acid. It cleans gently and leaves skin feeling soft.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Gentle enough for reactive skin."
+      }
+    }
+  },
+  {
+    "slug": "disodium-cocoamphodiacetate",
+    "name": "Disodium Cocoamphodiacetate",
+    "aliases": [],
+    "functions": [
+      "cleansing",
+      "foaming"
+    ],
+    "description": "A mild, coconut-based co-cleanser that makes foam creamier and softens harsher surfactants.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "amino-acids",
+    "name": "Amino Acids",
+    "aliases": [
+      "lysine",
+      "histidine",
+      "arginine",
+      "aspartic acid",
+      "threonine",
+      "serine",
+      "glutamic acid",
+      "proline",
+      "glycine",
+      "alanine",
+      "valine",
+      "methionine",
+      "isoleucine",
+      "leucine",
+      "tyrosine",
+      "phenylalanine",
+      "cysteine"
+    ],
+    "functions": [
+      "hydrating",
+      "skin conditioning"
+    ],
+    "description": "The building blocks of proteins, and part of skin's own natural moisturising factor. In skincare they help skin hold water and feel smoother.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Supports natural hydration."
+      }
+    }
+  },
+  {
+    "slug": "sodium-benzoate",
+    "name": "Sodium Benzoate",
+    "aliases": [],
+    "functions": [
+      "preservative"
+    ],
+    "description": "A gentle preservative, often paired with others, that keeps mould and yeast from growing in water-based products.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "olive-oil",
+    "name": "Olive Oil",
+    "aliases": [
+      "olea europaea fruit oil",
+      "olea europaea (olive) fruit oil"
+    ],
+    "functions": [
+      "emollient",
+      "moisturising"
+    ],
+    "description": "A rich plant oil that softens dry skin. It is high in oleic acid, which some acne-prone and very sensitive skin types don't love.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Nourishing for dry skin."
+      },
+      "acne": {
+        "fit": 0,
+        "note": "Fine in a rinse-off. Heavier as a leave-on."
+      }
+    }
+  },
+  {
+    "slug": "olive-leaf-extract",
+    "name": "Olive Leaf Extract",
+    "aliases": [
+      "olea europaea leaf extract"
+    ],
+    "functions": [
+      "antioxidant"
+    ],
+    "description": "An extract from olive leaves, rich in antioxidants that help protect skin from everyday environmental stress.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "safflower-oil",
+    "name": "Safflower Oil",
+    "aliases": [
+      "carthamus tinctorius seed oil",
+      "carthamus tinctorius (safflower) seed oil"
+    ],
+    "functions": [
+      "emollient"
+    ],
+    "description": "A light plant oil rich in linoleic acid, a fatty acid that supports the skin barrier.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Light nourishment."
+      }
+    }
+  },
+  {
+    "slug": "chamomile",
+    "name": "Chamomile Extract",
+    "aliases": [
+      "chamomilla recutita extract",
+      "chamomilla recutita (matricaria) flower extract",
+      "matricaria flower extract",
+      "bisabolol"
+    ],
+    "functions": [
+      "soothing"
+    ],
+    "description": "A calming plant extract. Most people find it soothing, though anyone allergic to daisy-family plants may react.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 0,
+        "note": "Usually calming. Avoid if you have daisy-family allergies."
+      }
+    }
+  },
+  {
+    "slug": "potassium-cetyl-phosphate",
+    "name": "Potassium Cetyl Phosphate",
+    "aliases": [],
+    "functions": [
+      "emulsifier"
+    ],
+    "description": "A mild emulsifier that keeps creams and sunscreens smooth and stable, and helps sunscreen hold up to sweat and water.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "c12-15-alkyl-benzoate",
+    "name": "C12-15 Alkyl Benzoate",
+    "aliases": [],
+    "functions": [
+      "emollient",
+      "solvent"
+    ],
+    "description": "A light emollient that dissolves sunscreen filters and gives a smooth, non-greasy feel.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "fatty-acids",
+    "name": "Essential Fatty Acids",
+    "aliases": [
+      "linoleic acid",
+      "linolenic acid",
+      "alpha-linolenic acid"
+    ],
+    "functions": [
+      "barrier support",
+      "emollient"
+    ],
+    "description": "Linoleic and linolenic acids are fats that are part of a healthy skin barrier. Adding them can help skin feel softer and less tight.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Supports a dry barrier."
+      },
+      "acne": {
+        "fit": 1,
+        "note": "Linoleic acid is light and barrier-friendly."
+      }
+    }
+  },
+  {
+    "slug": "glyceryl-glucoside",
+    "name": "Glyceryl Glucoside",
+    "aliases": [],
+    "functions": [
+      "hydrating"
+    ],
+    "description": "A humectant that combines glycerin with a sugar. It helps skin draw in and hold water.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Adds hydration."
+      }
+    }
+  },
+  {
+    "slug": "trehalose",
+    "name": "Trehalose & Plant Sugars",
+    "aliases": [
+      "sorbitol",
+      "glucose"
+    ],
+    "functions": [
+      "hydrating"
+    ],
+    "description": "Simple plant sugars used as humectants. They help hold water in the skin and give formulas a soft feel.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "sodium-polyacrylate",
+    "name": "Sodium Polyacrylate",
+    "aliases": [
+      "sodium polyacryloyldimethyl taurate",
+      "polyacrylate-13"
+    ],
+    "functions": [
+      "thickener",
+      "texture"
+    ],
+    "description": "Synthetic thickeners that give gels and creams their texture and help them stay stable. Inactive on skin.",
     "rating": "good",
     "skinTypes": {}
   }

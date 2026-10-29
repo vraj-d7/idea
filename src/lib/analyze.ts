@@ -187,7 +187,7 @@ export function findAlternatives(
   targetKeys: string[],
   products: ProductData[],
   ingredients: IngredientData[],
-  opts: { maxPrice?: number; excludeSlug?: string; limit?: number } = {},
+  opts: { maxPrice?: number; excludeSlug?: string; category?: string | null; limit?: number } = {},
 ): Alternative[] {
   const bySlug = new Map(ingredients.map((i) => [i.slug, i]));
   const targets = targetKeys.map((s) => bySlug.get(s)).filter((i): i is IngredientData => !!i);
@@ -205,6 +205,8 @@ export function findAlternatives(
 
   return products
     .filter((p) => p.slug !== opts.excludeSlug)
+    // A face wash isn't an alternative to a serum, even with the same active.
+    .filter((p) => !opts.category || !p.category || p.category === opts.category)
     .filter((p) => opts.maxPrice === undefined || p.priceInr < opts.maxPrice)
     .map((product) => ({
       product,

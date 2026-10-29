@@ -34,6 +34,7 @@ function toProduct(r: ProductRow): ProductData {
     slug: r.slug,
     name: r.name,
     brand: r.brand,
+    category: r.category,
     priceInr: r.priceInr,
     ingredients: r.ingredients as string[],
     keyIngredients: r.keyIngredients as string[],
