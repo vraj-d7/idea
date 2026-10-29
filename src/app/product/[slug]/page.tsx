@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 import { AdSlot } from "@/components/AdSlot";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
@@ -37,15 +36,9 @@ export async function generateMetadata({ params }: PageProps<"/product/[slug]">)
   };
 }
 
-export default function ProductPage({ params }: PageProps<"/product/[slug]">) {
-  return (
-    <Suspense fallback={<div className="h-64 animate-pulse rounded-3xl bg-blush" aria-busy="true" />}>
-      <ProductContent params={params} />
-    </Suspense>
-  );
-}
-
-async function ProductContent({ params }: Pick<PageProps<"/product/[slug]">, "params">) {
+// Prerendered for every product; params is awaited outside Suspense so
+// unknown slugs return a real 404.
+export default async function ProductPage({ params }: PageProps<"/product/[slug]">) {
   const { slug } = await params;
   const [product, ingredients, rules, products] = await Promise.all([
     getProduct(slug),
