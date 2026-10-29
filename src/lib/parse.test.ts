@@ -49,6 +49,14 @@ describe("splitIngredients", () => {
     ]);
   });
 
+  it("splits (and) even without spaces around it", () => {
+    expect(splitIngredients("Lauryl Glucoside(and) Polyglyceryl-6 Laurate (and)Disodium EDTA")).toEqual([
+      "Lauryl Glucoside",
+      "Polyglyceryl-6 Laurate",
+      "Disodium EDTA",
+    ]);
+  });
+
   it("does not split 'and' inside a lowercase description", () => {
     expect(splitIngredients("Water, cocoa and shea blend")).toEqual(["Water", "cocoa and shea blend"]);
   });
@@ -115,6 +123,18 @@ describe("matchIngredient", () => {
     expect(match("Retinol")).toBe("retinol");
     expect(match("Retinal")).toBe("retinal");
     expect(match("Retinoll")).toBe("retinol");
+  });
+
+  it("does not fuzzy-match different chemicals with similar names", () => {
+    expect(match("Benzophenone-4")).not.toBe("oxybenzone"); // oxybenzone is benzophenone-3
+    expect(match("Dipropylene Glycol")).not.toBe("propylene-glycol");
+    expect(match("Diethanolamine")).not.toBe("triethanolamine");
+  });
+
+  it("still forgives spacing and hyphen differences", () => {
+    expect(match("Polysorbate20")).toBe("polysorbate-20");
+    expect(match("Polysorbate-20")).toBe("polysorbate-20");
+    expect(match("Sodium Lauryl Sarcosinate")).toBe("sodium-lauroyl-sarcosinate");
   });
 
   it("does not fuzzy-match short names", () => {

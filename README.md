@@ -112,7 +112,9 @@ All catalog data lives in `prisma/data/`. Edit the JSON, then run `npm run db:se
 - `affiliateUrl` currently points at each brand's own product page. Swap in your affiliate links (Amazon Associates, Nykaa, Cuelinks, …) as you join programs. `AFFILIATE_TAG_*` only helps for stores that use a URL tag, like Amazon.
 - Set `"placeholder": true` for any made-up test product. Placeholder products are `noindex` and left out of the sitemap.
 
-**Current catalog:** 14 real products from Minimalist, The Derma Co, Deconstruct, Plum and Re'equil. Ingredient lists and MRPs were taken from each brand's official product page on 29 Oct 2026. Obvious typos on those pages were fixed ("Cholestrol" → "Cholesterol", "Ethylexanoate" → "Ethylhexanoate"), and "(and)" blends were split into separate ingredients. A unit test checks that every catalog label parses with fewer than half its ingredients unidentified, and that each product's key ingredients are recognised.
+**Adding products from a label:** `scripts/add-products.ts` takes raw label text (paste it as printed, "(and)" blends included), splits it with the app's own parser, and appends to `products.json`. Edit the `NEW` list, then run `npx tsx scripts/add-products.ts && npm run db:seed`. Products already in the file are skipped.
+
+**Current catalog:** 27 real products from Minimalist, The Derma Co, Deconstruct, Plum, Re'equil, Pilgrim, Foxtale and Dot & Key. Ingredient lists and MRPs were taken from each brand's official product page on 29 Oct 2026. Obvious typos on those pages were fixed ("Cholestrol" → "Cholesterol", "Ethylexanoate" → "Ethylhexanoate"), and "(and)" blends were split into separate ingredients. A unit test checks that every catalog label parses with fewer than half its ingredients unidentified, and that each product's key ingredients are recognised.
 
 ## How it works
 

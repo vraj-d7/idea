@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { AdSlot } from "@/components/AdSlot";
 import { AffiliateButton } from "@/components/AffiliateButton";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
@@ -12,8 +13,8 @@ import { getConflictRules, getIngredients, getProduct, getProducts } from "@/lib
 import { buildIndex, matchIngredient } from "@/lib/parse";
 import { formatInr } from "@/lib/site";
 
-// No Product JSON-LD yet: Google wants real offers/reviews for it, and the
-// sample catalog is placeholder data. Add it once products are real.
+// No Product JSON-LD yet: Google wants offers/reviews for rich results. Add
+// it once prices come from a live affiliate feed.
 
 export async function generateStaticParams() {
   const products = await getProducts();
@@ -36,9 +37,18 @@ export async function generateMetadata({ params }: PageProps<"/product/[slug]">)
   };
 }
 
-// Prerendered for every product; params is awaited outside Suspense so
-// unknown slugs return a real 404.
-export default async function ProductPage({ params }: PageProps<"/product/[slug]">) {
+// params is read inside Suspense so navigation stays instant (Next 16). Every
+// product is still fully prerendered via generateStaticParams. Unknown slugs
+// show the not-found page (noindex) with a 200 status.
+export default function ProductPage({ params }: PageProps<"/product/[slug]">) {
+  return (
+    <Suspense fallback={<div className="h-64 animate-pulse rounded-3xl bg-blush" aria-busy="true" />}>
+      <ProductContent params={params} />
+    </Suspense>
+  );
+}
+
+async function ProductContent({ params }: Pick<PageProps<"/product/[slug]">, "params">) {
   const { slug } = await params;
   const [product, ingredients, rules, products] = await Promise.all([
     getProduct(slug),

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { AdSlot } from "@/components/AdSlot";
 import { AffiliateDisclosure } from "@/components/AffiliateDisclosure";
 import { SectionHeading } from "@/components/analysis";
@@ -34,10 +35,18 @@ export async function generateMetadata({ params }: PageProps<"/ingredient/[slug]
   };
 }
 
-// Every ingredient is prerendered by generateStaticParams, so params is
-// awaited outside Suspense: unknown slugs get a real 404 status instead of a
-// streamed "not found" with a 200.
-export default async function IngredientPage({ params }: PageProps<"/ingredient/[slug]">) {
+// params is read inside Suspense so navigation stays instant (Next 16). Every
+// ingredient is still fully prerendered via generateStaticParams. Unknown
+// slugs show the not-found page (noindex) with a 200 status.
+export default function IngredientPage({ params }: PageProps<"/ingredient/[slug]">) {
+  return (
+    <Suspense fallback={<div className="h-64 animate-pulse rounded-3xl bg-blush" aria-busy="true" />}>
+      <IngredientContent params={params} />
+    </Suspense>
+  );
+}
+
+async function IngredientContent({ params }: Pick<PageProps<"/ingredient/[slug]">, "params">) {
   const { slug } = await params;
   const [ing, all, rules, products] = await Promise.all([
     getIngredient(slug),

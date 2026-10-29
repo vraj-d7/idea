@@ -581,7 +581,9 @@
       "ceramide 6 ii",
       "ceramide eos",
       "ceramide",
-      "ceramide as"
+      "ceramide as",
+      "ceramide ng",
+      "ceramide 1,2,3,4,6ii"
     ],
     "functions": [
       "barrier support",
@@ -709,7 +711,8 @@
       "perfume",
       "aroma",
       "fragrance/parfum",
-      "parfum/fragrance"
+      "parfum/fragrance",
+      "allergen free fragrance"
     ],
     "functions": [
       "scent"
@@ -883,7 +886,11 @@
       "cyclopentasiloxane",
       "cyclomethicone",
       "silicone",
-      "caprylyl methicone"
+      "caprylyl methicone",
+      "phenyl trimethicone",
+      "dimethicone crosspolymer",
+      "dimethicone/vinyl dimethicone crosspolymer",
+      "polymethylsilsesquioxane"
     ],
     "functions": [
       "emollient",
@@ -995,7 +1002,8 @@
       "tocopheryl acetate",
       "vitamin e",
       "dl-alpha tocopherol",
-      "mixed tocopherols"
+      "mixed tocopherols",
+      "tocotrienol"
     ],
     "functions": [
       "antioxidant",
@@ -1684,7 +1692,9 @@
   {
     "slug": "sodium-pca",
     "name": "Sodium PCA",
-    "aliases": [],
+    "aliases": [
+      "pca"
+    ],
     "functions": [
       "hydrating",
       "humectant"
@@ -1772,7 +1782,8 @@
     "slug": "lecithin",
     "name": "Lecithin",
     "aliases": [
-      "hydrogenated lecithin"
+      "hydrogenated lecithin",
+      "lecithin hydrogenated"
     ],
     "functions": [
       "emulsifier",
@@ -1790,7 +1801,8 @@
       "sclerotium gum",
       "pullulan",
       "cellulose gum",
-      "hydroxypropyl methylcellulose"
+      "hydroxypropyl methylcellulose",
+      "guar gum"
     ],
     "functions": [
       "thickener",
@@ -1817,7 +1829,8 @@
     "name": "Glyceryl Stearate",
     "aliases": [
       "peg-100 stearate",
-      "glyceryl stearate se"
+      "glyceryl stearate se",
+      "glyceryl monostearate"
     ],
     "functions": [
       "emulsifier",
@@ -2263,7 +2276,10 @@
       "leucine",
       "tyrosine",
       "phenylalanine",
-      "cysteine"
+      "cysteine",
+      "l-proline",
+      "hydroxyproline",
+      "lysine hcl"
     ],
     "functions": [
       "hydrating",
@@ -2458,5 +2474,144 @@
     "description": "Synthetic thickeners that give gels and creams their texture and help them stay stable. Inactive on skin.",
     "rating": "good",
     "skinTypes": {}
+  },
+  {
+    "slug": "uvinul-a-plus",
+    "name": "Uvinul A Plus (DHHB)",
+    "aliases": [
+      "diethylamino hydroxybenzoyl hexyl benzoate",
+      "dhhb"
+    ],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "A modern, photostable UVA filter, often used as a more stable alternative to avobenzone. Common in newer Indian and Korean-style gel sunscreens.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "mexoryl-sx",
+    "name": "Mexoryl SX",
+    "aliases": [
+      "terephthalylidene dicamphor sulfonic acid",
+      "ecamsule"
+    ],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "A water-soluble UVA filter developed by L'Oréal. It's photostable and pairs well with oil-soluble filters for broad protection.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "ensulizole",
+    "name": "Ensulizole",
+    "aliases": [
+      "phenylbenzimidazole sulfonic acid"
+    ],
+    "functions": [
+      "sunscreen (chemical)",
+      "UV filter"
+    ],
+    "groups": [
+      "uv-filter"
+    ],
+    "description": "A water-soluble UVB filter that feels light on skin, which is why it shows up in gel and watery sunscreens.",
+    "rating": "good",
+    "skinTypes": {}
+  },
+  {
+    "slug": "ectoin",
+    "name": "Ectoin",
+    "aliases": [
+      "ectoine"
+    ],
+    "functions": [
+      "hydrating",
+      "barrier support",
+      "soothing"
+    ],
+    "description": "A molecule made by microbes that live in extreme conditions. In skincare it helps skin hold water and cope with stress like heat, pollution and UV.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Calming and protective."
+      },
+      "dry": {
+        "fit": 1,
+        "note": "Helps with hydration."
+      }
+    }
+  },
+  {
+    "slug": "kokum-butter",
+    "name": "Kokum Butter",
+    "aliases": [
+      "garcinia indica seed butter"
+    ],
+    "functions": [
+      "emollient",
+      "moisturising"
+    ],
+    "description": "A butter from the seeds of the kokum fruit, native to India. It's firmer and less greasy than shea and softens dry skin.",
+    "rating": "good",
+    "skinTypes": {
+      "dry": {
+        "fit": 1,
+        "note": "Nourishing without much greasiness."
+      }
+    }
+  },
+  {
+    "slug": "licorice-root-extract",
+    "name": "Licorice Root Extract",
+    "aliases": [
+      "glycyrrhiza glabra root extract",
+      "glycyrrhiza glabra (licorice) root extract",
+      "glycyrrhiza glabra extract",
+      "dipotassium glycyrrhizate"
+    ],
+    "functions": [
+      "brightening",
+      "soothing"
+    ],
+    "description": "An extract from licorice root that's used to calm redness and help even out the look of dark spots.",
+    "rating": "good",
+    "skinTypes": {
+      "sensitive": {
+        "fit": 1,
+        "note": "Usually soothing."
+      }
+    }
+  },
+  {
+    "slug": "sodium-c14-16-olefin-sulfonate",
+    "name": "Sodium C14-16 Olefin Sulfonate",
+    "aliases": [],
+    "functions": [
+      "cleansing",
+      "foaming"
+    ],
+    "description": "A strong, high-foaming cleansing agent. It cleans well but can be drying, similar to sulfates, especially for dry or sensitive skin.",
+    "rating": "care",
+    "skinTypes": {
+      "dry": {
+        "fit": -1,
+        "note": "Can feel stripping."
+      },
+      "sensitive": {
+        "fit": -1,
+        "note": "May irritate reactive skin."
+      }
+    }
   }
 ]

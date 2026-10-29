@@ -15,7 +15,7 @@ export function splitIngredients(text: string): string[] {
   return body
     // Blends are written "Phenoxyethanol (and) Ethylhexylglycerin" or
     // "Allantoin and Sodium Gluconate": treat each part as its own ingredient.
-    .split(/(?<!\d),|,(?!\d)|;|\n|\r|•|·|\||\s\(and\)\s|\s+and\s+(?=[A-Z])/)
+    .split(/(?<!\d),|,(?!\d)|;|\n|\r|•|·|\||\s*\(and\)\s*|\s+and\s+(?=[A-Z])/)
     .map((s) => s.trim().replace(/^[\s.*\-–]+|[\s.*]+$/g, ""))
     .filter((s) => s.length > 0);
 }
@@ -95,6 +95,17 @@ export function buildIndex(ingredients: Pick<IngredientData, "slug" | "name" | "
   return index;
 }
 
+const digitsOf = (s: string) => (s.match(/\d+/g) ?? []).join(",");
+
+/**
+ * Typos keep the start of a word and its numbers. Different chemicals with
+ * similar names often don't: Dipropylene vs Propylene Glycol, Diethanolamine
+ * vs Triethanolamine, Benzophenone-4 vs Benzophenone-3.
+ */
+function plausibleTypo(a: string, b: string): boolean {
+  return a.slice(0, 3) === b.slice(0, 3) && digitsOf(a) === digitsOf(b);
+}
+
 /** Find the ingredient slug for one label entry, or null. */
 export function matchIngredient(raw: string, index: IngredientIndex): string | null {
   const cands = candidates(raw);
@@ -110,7 +121,7 @@ export function matchIngredient(raw: string, index: IngredientIndex): string | n
     const max = allowedDistance(c.length);
     if (max === 0) continue;
     for (const [key, slug] of index) {
-      if (allowedDistance(key.length) === 0) continue;
+      if (allowedDistance(key.length) === 0 || !plausibleTypo(c, key)) continue;
       const d = levenshtein(c, key, max);
       if (d <= max && (!best || d < best.dist)) best = { slug, dist: d };
     }
