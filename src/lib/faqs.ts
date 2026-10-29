@@ -15,6 +15,7 @@ function describeRef(ref: string, all: IngredientData[]): string {
   if (!ref.startsWith("group:")) return all.find((i) => i.slug === ref)?.name ?? ref;
   const group = ref.slice(6);
   const members = all.filter((i) => i.groups.includes(group)).map((i) => i.name);
+  if (members.length === 1) return members[0];
   const label = GROUP_LABEL[group] ?? group;
   return members.length ? `${label} (${members.join(", ")})` : label;
 }

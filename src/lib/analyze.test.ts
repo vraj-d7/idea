@@ -144,6 +144,8 @@ describe("buildFaqs", () => {
     const faqs = buildFaqs(bySlug("retinol"), rules, ingredients);
     expect(faqs.some((f) => f.q.startsWith("Can I use Retinol with AHAs"))).toBe(true);
     expect(faqs.some((f) => f.q === "Can I use Retinol with other retinoids?")).toBe(true);
+    // Single-member groups use the ingredient's own name.
+    expect(faqs.some((f) => f.q === "Can I use Retinol with Benzoyl Peroxide?")).toBe(true);
   });
 
   it("has no duplicate questions", () => {
